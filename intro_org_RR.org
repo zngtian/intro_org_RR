@@ -1,0 +1,80 @@
+#+TITLE: Emacs, Org-Mode, and Reproducible Research
+#+AUTHOR: Zheng Tian
+#+EMAIL: zngtian@gmail.com
+#+DATE: [2017-02-09 Thu]
+#+OPTIONS: H:3 num:2 toc:nil
+#+PROPERTY: header-args:R  :session *R*
+
+* Introduction
+
+This file serves as the manager for the project of preparing a
+workshop for an introduction to Emacs, org-mode, and use it to
+implement reproducible research. 
+
+* Tasks and planning
+
+** TODO Write sections about Emacs and org mode
+SCHEDULED: <2017-01-30 Mon>
+** TODO Write sections about reproducible research
+SCHEDULED: <2017-01-31 Tue>
+** TODO Write sections about babel in org mode
+SCHEDULED: <2017-02-01 Wed>
+** TODO Write sections about writing research notes and papers in org mode
+SCHEDULED: <2017-02-02 Thu>
+** TODO Finish a complete mini research project for demonstration
+SCHEDULED: <2017-02-03 Fri>
+** TODO Try to export and refine the slides using both beamer and revealjs
+SCHEDULED: <2017-02-05 Sun>
+** TODO Practice presentation
+SCHEDULED: <2017-02-06 Mon>-<2017-03-08 Wed>
+** TODO Present workshop
+SCHEDULED: <2017-02-09 Thu>
+
+* Org file for lecture notes
+
+[[file:lecturenotes.org]]
+
+* Org file for presentation
+
+[[file:slides.org]]
+
+* Brainstorming
+
+** What are the goals of organizing this workshop?
+
+The primary goal of giving this workshop is to share with people my
+experience of using Emacs and org-mode to carry out reproducible
+research.
+
+Taking this opportunity, I want to summarize and formalize my workflow
+of undertaking a research project using Emacs, org-mode, and other
+software, such as R, git, Mendeley, etc. 
+
+** What to be covered?
+
+*** About Emacs
+
+- What is Emacs?
+- What are the main feature of Emacs?
+- what is the basic usage of Emacs?
+- What are the major and minor modes that I will use in my research?
+
+*** About org mode
+
+- What is org-mode?
+- What are the main feature of org-mode?
+- What can we do using org-mode?
+
+*** About reproducible research
+
+- What is reproducible research?
+- What are the must-dos in practicing reproducible research?
+
+** How will the workshop be designed?
+
+** What will the materials to be disseminated? 
+
+
+
+
+

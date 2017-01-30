@@ -1,0 +1,8 @@
+#+TITLE: Workshop on Emacs, Org-Mode, and Reproducible Research
+#+AUTHOR: Zheng Tian
+#+EMAIL: zngtian@gmail.com
+#+DATE: [2017-02-09 Thu]
+#+OPTIONS: H:3 num:2 toc:nil
+#+PROPERTY: header-args:R  :session *R*
+
+

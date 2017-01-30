@@ -1,0 +1,12 @@
+#+TITLE: Worshop on Emacs, Org-Mode, and Reproducible Research
+#+AUTHOR: Zheng Tian
+#+EMAIL: zngtian@gmail.com
+#+DATE: [2017-02-09 Thu]
+#+OPTIONS: H:3 num:2 toc:nil
+#+OPTIONS:
+#+PROPERTY: header-args:R  :session *R*
+#+STARTUP: content indent align
+#+TAGS:
+#+FILETAGS:
+#+LATEX_HEADER:
+
