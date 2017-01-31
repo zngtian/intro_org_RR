@@ -5,4 +5,140 @@
 #+OPTIONS: H:3 num:2 toc:nil
 #+PROPERTY: header-args:R  :session *R*
 
+* Introduction
+
+
+* Description
+:PROPERTIES:
+:EXPORT_TITLE: Workshop on Emacs, Org-Mode, and Reproducible Research
+:EXPORT_AUTHOR:
+:EXPORT_DATE:
+:EXPORT_OPTIONS: H:1 num:nil toc:nil
+:EXPORT_LATEX_HEADER: \usepackage[margin=1in]{geometry}
+:EXPORT_LATEX_HEADRE: \usepackage{linespace}
+:EXPORT_LATEX_HEADER: \onehalfspacing
+:END:
+
+** Workshop description
+
+Reproducible research is the idea that data analyses, and more
+generally, scientific claims, are published with their data and
+software code so that others may verify the findings and build upon
+them.[fn:1] Reproducible research consists of a workflow that
+incorporates narrative description, mathematical proof, code
+development, result display in either tables or graphs, and
+bibliography management. Handy tools can make implementing
+reproducible research easier. Among many good alternatives, such as R
+Markdown and knitr that are included in RStudio and IPython Notebook,
+this workshop introduces Emacs and its org-mode.
+
+Emacs is a text editor whose functions are extensible through its
+contributed packages, among which the org-mode is one of the most
+widely used. Within the org-mode, we can write structured text, write
+mathematical equations as in LaTeX, and execute codes in R, Python and
+other programming languages, from which the results are dynamically
+embedded in the file in tables and graphs. The org-mode file can be
+easily exported to either a PDF or HTML file, in which section
+numbers, cross-references, mathematics, tables, and graphs are
+properly inserted. With the help of other modes in Emacs, we can use
+the org-mode as bibliography management, task management, daily
+planner, and a list goes on.
+
+This workshop is to share my experience of using org-mode to take
+notes, write papers, and manage my daily work through the perspective
+of reproducible research. I hope that audiences will start to use
+Emacs and org-mode after attending this workshop, and explore their
+plentiful and powerful functions by continuously playing with them
+every day.
+
+
+** Instructor: Zheng Tian
+
+Zheng Tian is Assistant Professor at International School of Economics and
+Business, Capital University of Economics and Business, Beijing,
+China. He is currently visiting the Regional Research Institute where
+he was a former research assistant from 2009 to 2014.
+
+
+** Time and Location
+
+February 9th, Time TBA, at Regional Research Institute.
+
+
+
+* Emacs
+
+** What is Emacs?
+
+*** Emacs is a text editor
+
+GNU Emacs is a free, portable, extensible text editor. That it is free
+means specifically that the source code is freely copyable and
+redistributable. That it is portable means that it runs on many
+machines under many different operating systems, so that you can
+probably count on being able to use the same editor no matter what
+machine you're using. That it is extensible means that you can not
+only customize all aspects of its usage (from key bindings through
+fonts, colors, windows, mousage and menus), but you can program Emacs
+to do entirely new things that its designers never thought of.
+
+*** Emacs goes beyond a text editor
+
+macs is an extremely successful program, and does more for you than
+any other editor. It's particularly good for programmers. If you use a
+common programming language, Emacs probably provides a mode that makes
+it especially easy to edit code in that language, providing context
+sensitive indentation and layout. It also probably allows you to
+compile your programs inside Emacs, with links from error messages to
+source code; debug your programs inside Emacs, with links to the
+source; interact directly with the language interpretor (where
+appropriate); manage change logs; jump directly to a location in the
+source by symbol (function or variable name); and interact with your
+revision control system.
+
+** The feature of Emacs
+
+** Get started
+
+*** Installation
+
+*** Configuration
+
+
+** Basic usage of Emacs
+
+** Packages in Emacs
+
+** Basic configuration of Emacs
+
+* Org-mode
+
+** What is org-mode?
+
+** Major functions in org-mode
+
+** Text structure
+- Headline
+- List
+- Blocks
+
+** Babel
+
+** Mathematics
+
+** Exports
+
+
+* What is reproducible research?
+
+** Reading materials
+
+- http://ropensci.github.io/reproducibility-guide/
+- https://www.coursera.org/learn/reproducible-research
+
+
+* Footnotes
+
+[fn:1] This definition is from
+https://www.coursera.org/learn/reproducible-research.
 

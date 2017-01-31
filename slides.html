@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Worshop on Emacs, Org-Mode, and Reproducible Research</title>
+<meta name="author" content="(Zheng Tian)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="file:////Users/ztian/reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="file:////Users/ztian/reveal.js/css/theme/white.css" id="theme"/>
+
+<link rel="stylesheet" href="file:////Users/ztian/reveal.js/lib/css/zenburn.css"/>
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'file:////Users/ztian/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<link rel="stylesheet" type="text/css" href="file:///Users/ztian/.emacs.d/css/theorems.css"/>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Worshop on Emacs, Org-Mode, and Reproducible Research</h1><h2 class="author">Zheng Tian</h2><h2 class="date">2017-02-09 Thu 00:00</h2><p class="date">Created: 2017-01-30 Mon 22:46</p>
+</section>
+<section id="table-of-contents">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-org18cf78e">Introduction</a></li>
+<li><a href="#/slide-orgf40dce0">Emacs</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+
+<section>
+<section id="slide-org18cf78e">
+<h2 id="org18cf78e">Introduction</h2>
+
+</section>
+</section>
+<section>
+<section id="slide-orgf40dce0">
+<h2 id="orgf40dce0">Emacs</h2>
+<div class="outline-text-2" id="text-orgf40dce0">
+</div></section>
+</section>
+<section>
+<section id="slide-org7655786">
+<h3 id="org7655786">What is Emacs? A text editor</h3>
+<p>
+GNU Emacs is a free, portable, extensible text editor.
+</p>
+
+<ul>
+<li>Free: Open source, freely copyable and redistributable.</li>
+<li>Portable: Run on many machines under different operating systems.</li>
+<li>Extensible: Customizable for all aspects, many contributed packages,
+and add new functions via Elisp.</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org7e1f3cb">
+<h3 id="org7e1f3cb">Emacs is beyond a text editor</h3>
+<ul>
+<li>Emacs is an IDE for editing and executing code in programming
+languages, like R, python, MATLAB, etc.</li>
+<li>Emacs is an operating system, easily managing files and folders
+within a dired-directory interface.</li>
+<li>Emacs can do spell checking, reading news, checking and sending
+emails, etc., through plenty of contributed packages.</li>
+<li>Most importantly, Emacs enable researchers to manage research
+project, take notes, and write dynamic documentation.</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="file:////Users/ztian/reveal.js/lib/js/head.min.js"></script>
+<script src="file:////Users/ztian/reveal.js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+width: 1000,
+height: 800,
+margin: 0.10,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'file:////Users/ztian/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: 'file:////Users/ztian/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file:////Users/ztian/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+]
+});
+</script>
+</body>
+</html>

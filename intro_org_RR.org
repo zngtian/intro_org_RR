@@ -4,12 +4,13 @@
 #+DATE: [2017-02-09 Thu]
 #+OPTIONS: H:3 num:2 toc:nil
 #+PROPERTY: header-args:R  :session *R*
+#+CATEGORY: WORKSHOP
 
 * Introduction
 
 This file serves as the manager for the project of preparing a
 workshop for an introduction to Emacs, org-mode, and use it to
-implement reproducible research. 
+implement reproducible research.
 
 * Tasks and planning
 
@@ -48,7 +49,7 @@ research.
 
 Taking this opportunity, I want to summarize and formalize my workflow
 of undertaking a research project using Emacs, org-mode, and other
-software, such as R, git, Mendeley, etc. 
+software, such as R, git, Mendeley, etc.
 
 ** What to be covered?
 
@@ -72,7 +73,47 @@ software, such as R, git, Mendeley, etc.
 
 ** How will the workshop be designed?
 
-** What will the materials to be disseminated? 
+** What will the materials to be disseminated?
+** Write a short introduction
+
+Reproducible research is the idea that data analyses, and more
+generally, scientific claims, are published with their data and
+software code so that others may verify the findings and build upon
+them.[fn:1] Reproducible research consists of a workflow that
+incorporates narrative description, mathematical proof, code
+development, result display in either tables or graphs, and
+bibliography management. Handy tools can make implementing
+reproducible research easier. Among many good alternatives, such as R
+Markdown and knitr that are included in RStudio and IPython Notebook,
+this workshop introduces Emacs and its org-mode.
+
+Emacs is a text editor whose functions are extensible through its
+contributed packages, among which the org-mode is one of the most
+widely used. Within the org-mode, we can write structured text, write
+mathematical equations as in LaTeX, and execute codes in R, Python and
+other programming languages, from which the results are dynamically
+embedded in the file in tables and graphs. The org-mode file can be
+easily exported to either a PDF or HTML file, in which section
+numbers, cross-references, mathematics, tables, and graphs are
+properly inserted. With the help of other modes in Emacs, we can use
+the org-mode as bibliography management, task management, daily
+planner, and a list goes on.
+
+This workshop is to share my experience of using org-mode to take
+notes, write papers, and manage my daily work through the perspective
+of reproducible research. I hope that audiences will start to use
+Emacs and org-mode after attending this workshop, and explore their
+plentiful and powerful functions by continuously playing with them
+every day.
+
+
+* Footnotes
+
+[fn:1] This definition is from
+https://www.coursera.org/learn/reproducible-research
+
+
+
 
 
 
