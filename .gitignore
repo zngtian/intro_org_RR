@@ -369,3 +369,5 @@ _site/
 .jekyll-metadata
 /ltximg/org-ltximg_4903032b988f24f6685ca680270f916c36b837cb.png
 /intro_org_RR.org_archive
+/example/auto/*
+ltximg/*
