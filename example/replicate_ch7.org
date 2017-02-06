@@ -2,7 +2,9 @@
 #+AUTHOR: Zheng Tian
 #+DATE:
 #+OPTIONS: H:2 num:1 toc:nil ^:{}
-#+PROPERTY: header-args:R :session *myR* :tangle yes
+#+PROPERTY: header-args:R :session *myR* :tangle yes :eval no
+
+#+SETUPFILE: theme-readtheorg.setup
 
 #+LATEX_HEADER: \usepackage[margin=1.2in]{geometry}
 #+LATEX_HEADER: \usepackage{setspace}
@@ -22,6 +24,7 @@ library(AER)
 library(foreign)
 library(stargazer)
 #+END_SRC
+
 
 * Reading the data and basic summary statistics
 Let's first read the data into R and show some basic statistics.
@@ -57,6 +60,7 @@ percentage of students qualifying for free lunch, =mean_pct=.
 | Mean   :654.2 | Mean   :19.64 | Mean   :15.768 | Mean   :5312 | Mean   : 44.71 |
 | 3rd Qu.:666.7 | 3rd Qu.:20.87 | 3rd Qu.:22.970 | 3rd Qu.:5601 | 3rd Qu.: 66.86 |
 | Max.   :706.8 | Max.   :25.80 | Max.   :85.540 | Max.   :7712 | Max.   :100.00 |
+
 
 * Plots
 ** Create a matrix of scatterplots using =plot=
@@ -129,6 +133,7 @@ for (i in seq(along=xvars)) {
 }
 par(op)
 #+END_EXAMPLE
+
 
 * Estimation
 Let us first replicate the regression results in Equation (7.19). The
@@ -234,6 +239,7 @@ htvarm <- vcovHC(res.model.76, type = "HC1")
 |  -6.66491920338933 |    0.232394197515306 |    0.40034628247013 | -0.00244872476838095 |
 |  -20.7034584893232 |    0.400346282470112 |    2.49868335516912 |  -0.0102366018665727 |
 | 0.0818068203778026 | -0.00244872476838084 | -0.0102366018665727 |  0.00101024993508859 |
+
 
 * Hypothesis tests
 ** Testing a single coefficient
@@ -427,6 +433,7 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 The homoskedasticity-only F test points to rejecting the null hypothesis
 at both 5% and 10% levels.
 
+
 * Control variables and model specifications
 In this section we estimate different models for the application of
 test scores. The variable of interest is student-teacher ratios,
@@ -530,6 +537,7 @@ F Statistic & 22.575$^{***}$ & 155.014$^{***}$ & 476.306$^{***}$ & 234.638$^{***
 \end{tabular}
 \end{table}
 #+END_LaTeX
+
 
 * Appendix: R codes
 #+BEGIN_EXAMPLE

@@ -29,6 +29,41 @@
 
 * Introduction
 
+** Have you ever experienced this?
+:PROPERTIES:
+:BEAMER_env: frame
+:END:
+
+#+ATTR_HTML: :width 600 :height 600
+#+ATTR_LATEX: :width 0.5\textwidth
+[[file:figure/phdcomics.png]]
+
+
+** Reproducible research
+:PROPERTIES:
+:BEAMER_env: frame
+:END:
+
+  #+BEGIN_QUOTE
+  An article about computational science in a scientific publication is
+  not the scholarship itself, it is merely advertising of the
+  scholarship. The actual scholarship is the complete software
+  development environment and the complete set of instructions which
+  generated the figures.
+
+  -- Buckheit and Donoho (1995)
+  #+END_QUOTE
+
+
+** How can we do reproducible research?
+:PROPERTIES:
+:BEAMER_env: frame
+:END:
+
+#+ATTR_HTML: :width 800 :height 600
+#+ATTR_LATEX: :width 0.8\textwidth
+[[file:figure/emacs_startup.png]]
+
 
 * Emacs
 
@@ -46,6 +81,13 @@ GNU Emacs is a free, portable, extensible text editor.
 
 ** Emacs is beyond a text editor
 
+*** Emacs is a LaTeX editor via AucTex
+
+#+CAPTION: An illustration of the AucTex mode
+#+ATTR_HTML: :width 800 :height 600
+#+ATTR_LATEX: :width 0.6\textwidth
+[[file:figure/auctex_example.png]]
+
 *** Emacs is IDE for programming languages
 
 - Edit code with syntax highlighting
@@ -53,7 +95,7 @@ GNU Emacs is a free, portable, extensible text editor.
 
 #+CAPTION: An illustration of the ESS mode
 #+ATTR_HTML: :width 800 :height 600
-#+ATTR_LATEX: :width 0.8\textwidth
+#+ATTR_LATEX: :width 0.6\textwidth
 [[file:figure/r_example.png]]
 
 *** Emacs is an operating system
@@ -61,10 +103,17 @@ GNU Emacs is a free, portable, extensible text editor.
 - Emacs is an operating system, easily managing files and folders
   within a dired-directory interface.
 
-#+ATTR_LATEX: :width 0.8\textwidth
+#+ATTR_LATEX: :width 0.6\textwidth :height 0.6\textheight
 #+ATTR_HTML: :width 600 :height 550
 #+CAPTION: Emacs as an operating system with the dired mode
 [[file:figure/dired_example.png]]
+
+*** Emacs is a Git tool via Magit
+
+#+CAPTION: An illustration of the Magit mode
+#+ATTR_HTML: :width 800 :height 600
+#+ATTR_LATEX: :width 0.6\textwidth
+[[file:figure/magit_example.png]]
 
 *** Emacs can do many other things
 
@@ -135,48 +184,48 @@ Demonstrate some operations on Emacs in this section.
 
 *** Motion within a buffer
 
-- C-f and M-f: move forward by one character and by one word
-- C-b and M-b: move backward by one letter and by one word
-- C-n and C-p: move downward and upward
-- C-v and M-v: scroll down and up
-- M-< and M->: move to the start and to the end of a buffer
+- C-f and M-f :: move forward by one character and by one word
+- C-b and M-b :: move backward by one letter and by one word
+- C-n and C-p :: move downward and upward
+- C-v and M-v :: scroll down and up
+- M-< and M-> :: move to the start and to the end of a buffer
 
 *** Switch buffers and windows
 
-- C-x 2: open a new buffer
-- C-x 0: close the current buffer
-- C-x b: switch to a buffer
-- C-x o: switch between two opened buffers
-- C-x 4 b: switch to a buffer and open it as a new one
-- C-x 5 2 and C-x 5-0: open and close a new window
+- C-x 2 :: open a new buffer
+- C-x 0 :: close the current buffer
+- C-x b :: switch to a buffer
+- C-x o :: switch between two opened buffers
+- C-x 4 b :: switch to a buffer and open it as a new one
+- C-x 5 2 and C-x 5-0 :: open and close a new window
 
 *** Open, save, quit, and help
 
-- C-x C-f: open a new file
-- C-x C-s: save the current buffer
-- C-x s: save all files
-- C-g: cancel the currently invoked command. VERY IMPORTANT!
-- C-x C-c: exit Emacs
-- C-h ?/m/a: get help
+- C-x C-f :: open a new file
+- C-x C-s :: save the current buffer
+- C-x s :: save all files
+- C-g :: cancel the currently invoked command. VERY IMPORTANT!
+- C-x C-c :: exit Emacs
+- C-h ?/m/a :: get help
 
 *** Copy, yank, and delete
 
-- C-SPC: set a mark and move the cursor around to select a region
-- C-w: kill (cut)
-- M-w: copy
-- C-y: yank (paste)
-- DEL and C-d: delete a character backward and forward
-- M-DEL and M-d: delete a word backward and forward
-- C-k: kill a line.
-- C-x u: undo the previous editing.
+- C-SPC :: set a mark and move the cursor around to select a region
+- C-w :: kill (cut)
+- M-w :: copy
+- C-y :: yank (paste)
+- DEL and C-d :: delete a character backward and forward
+- M-DEL and M-d :: delete a word backward and forward
+- C-k :: kill a line.
+- C-x u :: undo the previous editing.
 
 *** Tutorial and cheat sheet
 
-- C-h t: open the complete tutorial
+- C-h t :: open the complete tutorial
 
-- A guided tour: https://www.gnu.org/software/emacs/tour/
+- A guided tour :: https://www.gnu.org/software/emacs/tour/
 
-- Cheat sheet: https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf
+- Cheat sheet :: https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf
 
 
 * Org-Mode
@@ -214,12 +263,9 @@ can accomplish a variety of work including, but not limited to,
  * Another top level headline
 #+END_EXAMPLE
 
-- Hit <TAB> key at a headline to see and hide the content under it
-- S-<TAB>: global cycling.
-- M-left and M-right: promote and demote a heading
-- C-c C-p, C-c C-n, C-c C-f, and C-c C-b: move up and down between
-  headlines
-- Use org-bullets to make it prettier.
+- <TAB> :: hit at a headline to see and hide the content under it
+- S-<TAB> :: global cycling.
+- M-left and M-right :: promote and demote a heading
 
 *** Lists
 :PROPERTIES:
@@ -321,7 +367,7 @@ either $$ a=+\sqrt{2} \text{ or }  a=-\sqrt{2} $$
 If $a^2=b$ and \( b=2 \), then the solution must be
 either $$ a=+\sqrt{2} \text{ or }  a=-\sqrt{2} $$
 
-*** TODO Table
+*** Table
 
 - ‘|’ as the first non-whitespace character starts a table. The
   following texts yield a table in HTML export
@@ -400,18 +446,17 @@ asterisks.
  * DONE This task has been done
 #+END_EXAMPLE
 
-- M-S RET: quick enter a TODO item
-- S-right/left: cycle through TODO status
-- S-up/down: cycle through priorities.
+- M-S RET :: quick enter a TODO item
+- S-right/left :: cycle through TODO status
+- S-up/down :: cycle through priorities.
 
 
 *** Schedule and deadline
 
 We can set schedule and deadline to TODO items.
 
-- C-c C-s: set a day and time to begin doing this item
-- C-c C-d: set a deadline
-- Time stamps are generated using the calendar minor mode.
+- C-c C-s :: set a day and time to begin doing this item
+- C-c C-d :: set a deadline
 
 #+BEGIN_EXAMPLE
  * [#A] TODO Do this first.
@@ -421,15 +466,17 @@ We can set schedule and deadline to TODO items.
    DEADLINE: <2017-02-03 Fri>
 #+END_EXAMPLE
 
+- Time stamps are generated using the calendar minor mode.
+
 
 *** Agenda view
 
 All TODO items, schedules, and deadlines can be viewed in the Agenda
 view in org mode.
 
-- C-c a a: start the agenda view
-- C-c a t: see all TODO items
-- C-c a m: filter TODO items by tags
+- C-c a a :: start the agenda view
+- C-c a t :: see all TODO items
+- C-c a m :: filter TODO items by tags
 
 Within the agenda view, you can filter by tag, change the status, and
 go to the headline of a TODO item.
@@ -505,7 +552,7 @@ Typically, literate programming involves the following three steps
 - Emacs org mode
 
 
-** Literate programming in with Org-mode
+** Literate programming with Org-mode
 
 *** Source code block
 
@@ -639,24 +686,24 @@ head(mpg[1:5])
 #+ATTR_HTML: :width 600 :height 500
 #+ATTR_LATEX: :width 0.6\textwidth :height 0.6\textheight
 #+RESULTS:
-[[file:mpg.png]]
+[[file:figure/mpg.png]]
 #+END_EXAMPLE
 
-#+BEGIN_SRC R :exports none :results output graphics :file mpg.png :cache yes
+#+BEGIN_SRC R :exports none :results output graphics :file figure/mpg.png :cache yes :eval
   ggplot(mpg, aes(displ, cty, colour = class)) +
       geom_point()
 #+END_SRC
 
-#+RESULTS[139a354b9019026f272316fe8e3139f97cb24ec0]:
-[[file:mpg.png]]
+#+RESULTS[43aa2acc67681f12a14ea4bdac1deeb8292c9ba8]:
+[[file:figure/mpg.png]]
 
 *** The figure generated
 
 #+CAPTION: The Scatterplot Between the Engine Displacement and City MPG
-#+ATTR_HTML: :width 500 :height 400
-#+ATTR_LATEX: :width 0.5\textwidth :height 0.5\textheight
+#+ATTR_HTML: :width 600 :height 500
+#+ATTR_LATEX: :width 0.6\textwidth :height 0.5\textheight
 #+RESULTS:
-[[file:mpg.png]]
+[[file:figure/mpg.png]]
 
 *** Results in latex
 :PROPERTIES:
@@ -751,6 +798,19 @@ used in teaching Econometrics.
 
 [[file:example/replicate_ch7.org]]
 
+
+** Tutorial sources
+:PROPERTIES:
+:BEAMER_env: frame
+:END:
+
+- John Kitchin's blog ::
+  [[http://kitchingroup.cheme.cmu.edu/blog/2014/08/08/What-we-are-using-org-mode-for/]]
+
+- John Kitchin's presentation on YouTube ::
+  https://www.youtube.com/watch?v=1-dUkyn_fZA&t=126s
+
+- Vikas Rawal's tutorial :: https://github.com/vikasrawal/orgpaper/blob/master/orgpapers.org
 
 
 

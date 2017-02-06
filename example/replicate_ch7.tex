@@ -1,4 +1,4 @@
-% Created 2017-02-06 Mon 11:14
+% Created 2017-02-06 Mon 16:20
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -34,7 +34,7 @@
 \maketitle
 
 \section{Introduction}
-\label{sec:org4702324}
+\label{sec:org357825d}
 This tutorial is to show how to estimate a multiple regression model
 and perform linear hypothesis testing. The application is about the
 test scores of the California school districts. We will use R to
@@ -48,11 +48,12 @@ library(foreign)
 library(stargazer)
 \end{verbatim}
 
+
 \section{Reading the data and basic summary statistics}
-\label{sec:org2d44ff2}
+\label{sec:org3d779b2}
 Let's first read the data into R and show some basic statistics.
 \subsection*{Read the STATA file}
-\label{sec:org3276abd}
+\label{sec:orgc301f50}
 Since the data is stored as an STATA file with the extension
   "\texttt{.dta}", we read the data using \texttt{read.dta()} in the library of
   \texttt{foreign}.
@@ -63,7 +64,7 @@ classdata <- read.dta("./data/caschool.dta")
 \end{verbatim}
 
 \subsection*{Summary}
-\label{sec:orgc9062cc}
+\label{sec:org34a9452}
 Upon reading the data, we often use \texttt{summary()} to see some basic
 statistics. Here we are not going to show summary statistics of all
 variables in the data set for the purpose of saving space, but only to
@@ -89,10 +90,11 @@ Max.   :706.8 & Max.   :25.80 & Max.   :85.540 & Max.   :7712 & Max.   :100.00\\
 \end{tabular}
 \end{center}
 
+
 \section{Plots}
-\label{sec:org8b93ab3}
+\label{sec:org1219949}
 \subsection*{Create a matrix of scatterplots using \texttt{plot}}
-\label{sec:org76e5a4c}
+\label{sec:org17b378e}
 We can create several scatterplots displayed in one graph with a
 matrix form.
 
@@ -164,15 +166,16 @@ for (i in seq(along=xvars)) {
 par(op)
 \end{verbatim}
 
+
 \section{Estimation}
-\label{sec:orgd9afbf2}
+\label{sec:org80d0c5a}
 Let us first replicate the regression results in Equation (7.19). The
 unit of the expenditure per pupil is dollars in the data set but it is
 in thousand dollars in regression. So we need to convert the unit in
 the data set by dividing \texttt{expn\_stu} by 1000, which is done directly in
 the formula.
 \subsection*{The OLS estimation}
-\label{sec:org4557e14}
+\label{sec:org40be6b9}
 
 \begin{verbatim}
 model.76 <- testscr ~ str + I(expn_stu / 1000) + el_pct
@@ -229,7 +232,7 @@ adj.rsq <- summary(res.model.76)$adj.r.squared
 
 \begin{itemize}
 \item Interpretation of the results
-\label{sec:orgdf23685}
+\label{sec:org685d8c0}
 
 As for the coefficients
 \begin{enumerate}
@@ -260,7 +263,7 @@ of the variation of test scores is not accounted for in the model.
 \end{itemize}
 
 \subsection*{The heteroskedasticity-consistent covariance matrix}
-\label{sec:org6b5beaf}
+\label{sec:orgdff0671}
 Note that standard errors and t statisitcs reported by \texttt{summary()} are
 the homoskedasticity-only s.e. and t's. The heteroskedasticity-robust
 covariance matrix can be obtained by \texttt{vcovHC()} in the package of
@@ -278,10 +281,11 @@ htvarm <- vcovHC(res.model.76, type = "HC1")
 \end{tabular}
 \end{center}
 
+
 \section{Hypothesis tests}
-\label{sec:org70b2fb9}
+\label{sec:org51a352a}
 \subsection*{Testing a single coefficient}
-\label{sec:org6964c32}
+\label{sec:org0555336}
 Running \texttt{summary(res.model.76)} can give you t-statistics for all
 coefficients. However, as noted above, these t-statistics are the
 homoskedasticity-only t-statistics. We should use the
@@ -351,10 +355,10 @@ are slightly different, given the corresponding t-statistics are
 identical in the two cases.
 \end{enumerate}
 \subsection*{Testing joint hypotheses}
-\label{sec:org3d773ee}
+\label{sec:org89a246c}
 \begin{itemize}
 \item Zero restrictions
-\label{sec:org7d87045}
+\label{sec:orgcf0c9d2}
 Let's first test the joint zero restrictions.
 \[ H_0:\, \beta_1 = 0, \beta_2 = 0 \text{ vs. } H_1: \beta_1 \neq 0
 \text{ or } \beta_2 \neq 0 \]
@@ -399,7 +403,7 @@ variance matrix and tested against a F distribution of (2, 416) degree
 of freedom.
 
 \item linear restrictions
-\label{sec:orgbf63cba}
+\label{sec:orgd8623ac}
 Let's test the following restriction,
 \[ H_0:\, \beta_1 + \beta_2 = 0, H_1: \beta_1 + \beta_2 \neq 0 \]
 
@@ -474,8 +478,9 @@ The homoskedasticity-only F test points to rejecting the null hypothesis
 at both 5\% and 10\% levels.
 \end{itemize}
 
+
 \section{Control variables and model specifications}
-\label{sec:orgaf8332d}
+\label{sec:orga373ef7}
 In this section we estimate different models for the application of
 test scores. The variable of interest is student-teacher ratios,
 \(STR\). In the base specification, we include the percentage of
@@ -574,8 +579,9 @@ F Statistic & 22.575$^{***}$ & 155.014$^{***}$ & 476.306$^{***}$ & 234.638$^{***
 \end{tabular}
 \end{table}
 
+
 \section{Appendix: R codes}
-\label{sec:orgf21e458}
+\label{sec:org2ac61b9}
 \begin{verbatim}
 library(AER)
 
