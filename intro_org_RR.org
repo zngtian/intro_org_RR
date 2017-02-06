@@ -14,26 +14,44 @@ implement reproducible research.
 
 * Tasks and planning
 
-** TODO Write sections about Emacs and org mode
-SCHEDULED: <2017-01-30 Mon>
+** DONE Write sections about Emacs
+CLOSED: [2017-02-03 Fri 16:40] SCHEDULED: <2017-01-31 Tue>
+:PROPERTIES:
+:ID:       26908C5B-152A-4FDC-979F-2A1BCE0F7A4C
+:END:
+
+** DONE Write section about org mode
+CLOSED: [2017-02-05 Sun 09:12] SCHEDULED: <2017-02-02 Thu>
+
 ** TODO Write sections about reproducible research
-SCHEDULED: <2017-01-31 Tue>
-** TODO Write sections about babel in org mode
-SCHEDULED: <2017-02-01 Wed>
-** TODO Write sections about writing research notes and papers in org mode
-SCHEDULED: <2017-02-02 Thu>
+SCHEDULED: <2017-02-04 Sat>
+:PROPERTIES:
+:ID:       385AF121-9096-4FD9-8C0E-857FB8F8EF8C
+:END:
+
 ** TODO Finish a complete mini research project for demonstration
-SCHEDULED: <2017-02-03 Fri>
+SCHEDULED: <2017-02-06 Mon>
+:PROPERTIES:
+:ID:       D9047440-A20D-48EE-955F-A6C5B186D3B0
+:END:
+
 ** TODO Try to export and refine the slides using both beamer and revealjs
-SCHEDULED: <2017-02-05 Sun>
+SCHEDULED: <2017-02-07 Tue>
+:PROPERTIES:
+:ID:       BE437097-1253-4E10-986E-3C1C319E914A
+:END:
+
 ** TODO Practice presentation
-SCHEDULED: <2017-02-06 Mon>-<2017-03-08 Wed>
+SCHEDULED: <2017-02-06 Mon>-<2017-02-08 Wed>
+:PROPERTIES:
+:ID:       E78A8B39-4395-46B9-889D-719DE271A020
+:END:
+
 ** TODO Present workshop
 SCHEDULED: <2017-02-09 Thu>
-
-* Org file for lecture notes
-
-[[file:lecturenotes.org]]
+:PROPERTIES:
+:ID:       EBF5139D-E23A-48C3-90E2-A9DB2FF6F7FD
+:END:
 
 * Org file for presentation
 
@@ -74,38 +92,6 @@ software, such as R, git, Mendeley, etc.
 ** How will the workshop be designed?
 
 ** What will the materials to be disseminated?
-** Write a short introduction
-
-Reproducible research is the idea that data analyses, and more
-generally, scientific claims, are published with their data and
-software code so that others may verify the findings and build upon
-them.[fn:1] Reproducible research consists of a workflow that
-incorporates narrative description, mathematical proof, code
-development, result display in either tables or graphs, and
-bibliography management. Handy tools can make implementing
-reproducible research easier. Among many good alternatives, such as R
-Markdown and knitr that are included in RStudio and IPython Notebook,
-this workshop introduces Emacs and its org-mode.
-
-Emacs is a text editor whose functions are extensible through its
-contributed packages, among which the org-mode is one of the most
-widely used. Within the org-mode, we can write structured text, write
-mathematical equations as in LaTeX, and execute codes in R, Python and
-other programming languages, from which the results are dynamically
-embedded in the file in tables and graphs. The org-mode file can be
-easily exported to either a PDF or HTML file, in which section
-numbers, cross-references, mathematics, tables, and graphs are
-properly inserted. With the help of other modes in Emacs, we can use
-the org-mode as bibliography management, task management, daily
-planner, and a list goes on.
-
-This workshop is to share my experience of using org-mode to take
-notes, write papers, and manage my daily work through the perspective
-of reproducible research. I hope that audiences will start to use
-Emacs and org-mode after attending this workshop, and explore their
-plentiful and powerful functions by continuously playing with them
-every day.
-
 
 * Footnotes
 
