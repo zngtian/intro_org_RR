@@ -16,6 +16,8 @@
 #+OPTIONS: reveal_center:t reveal_progress:t reveal_history:nil reveal_control:t
 #+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
 #+OPTIONS: reveal_width:1000 reveal_height:800
+
+#+REVEAL_ROOT: ./reveal.js
 #+REVEAL_MARGIN: 0.2
 #+REVEAL_MIN_SCALE: 0.5
 #+REVEAL_MAX_SCALE: 2.5
@@ -23,8 +25,9 @@
 #+REVEAL_THEME: moon
 #+REVEAL_HLEVEL: 2
 #+REVEAL_PLUGINS: (highlight notes zoom)
-#+REVEAL_EXTRA_JS:  { src: 'file:///Users/ztian/reveal.js/plugin/reveal.js-menu/menu.js' }
-#+REVEAL_MATHJAX_URL: file:///Users/ztian/gitDownloads/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+#+REVEAL_EXTRA_JS:  { src: './reveal.js/plugin/reveal.js-menu/menu.js' }
+# #+REVEAL_MATHJAX_URL: file:///Users/ztian/gitDownloads/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+# #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./css/theorems.css"/>
 
 
 * Introduction
@@ -63,6 +66,9 @@
 #+ATTR_HTML: :width 800 :height 600
 #+ATTR_LATEX: :width 0.8\textwidth
 [[file:figure/emacs_startup.png]]
+
+You can download my presentation at
+https://github.com/zngtian/intro_org_RR
 
 
 * Emacs
@@ -689,7 +695,7 @@ head(mpg[1:5])
 [[file:figure/mpg.png]]
 #+END_EXAMPLE
 
-#+BEGIN_SRC R :exports none :results output graphics :file figure/mpg.png :cache yes :eval
+#+BEGIN_SRC R :exports none :results output graphics :file figure/mpg.png :cache yes
   ggplot(mpg, aes(displ, cty, colour = class)) +
       geom_point()
 #+END_SRC

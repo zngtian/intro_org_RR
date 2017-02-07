@@ -7,53 +7,51 @@
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="file:////Users/ztian/reveal.js/css/reveal.css"/>
+<link rel="stylesheet" href="./reveal.js/css/reveal.css"/>
 
-<link rel="stylesheet" href="file:////Users/ztian/reveal.js/css/theme/moon.css" id="theme"/>
+<link rel="stylesheet" href="./reveal.js/css/theme/moon.css" id="theme"/>
 
-<link rel="stylesheet" href="file:////Users/ztian/reveal.js/lib/css/zenburn.css"/>
+<link rel="stylesheet" href="./reveal.js/lib/css/zenburn.css"/>
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
     if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'file:////Users/ztian/reveal.js/css/print/pdf.css';
+        link.href = './reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
-<script type="text/javascript" src="file:///Users/ztian/gitDownloads/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<link rel="stylesheet" type="text/css" href="file:///Users/ztian/.emacs.d/css/theorems.css"/>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h1 class="title">Emacs, Org-Mode, and Reproducible Research</h1><h2 class="author">Zheng Tian</h2><p class="date">Created: 2017-02-06 Mon 16:31</p>
+<section id="sec-title-slide"><h1 class="title">Emacs, Org-Mode, and Reproducible Research</h1><h2 class="author">Zheng Tian</h2><p class="date">Created: 2017-02-07 Tue 17:54</p>
 </section>
 <section id="table-of-contents">
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#/slide-org37f40d8">Introduction</a></li>
-<li><a href="#/slide-org28d67e0">Emacs</a></li>
-<li><a href="#/slide-org6d80b0c">Org-Mode</a></li>
-<li><a href="#/slide-orgc35a9f5">Reproducible research with org-mode</a></li>
+<li><a href="#/slide-org1077f54">Introduction</a></li>
+<li><a href="#/slide-orgc67283b">Emacs</a></li>
+<li><a href="#/slide-org636be8c">Org-Mode</a></li>
+<li><a href="#/slide-org3fbff71">Reproducible research with org-mode</a></li>
 </ul>
 </div>
 </div>
 </section>
 
-
 <section>
-<section id="slide-org37f40d8">
-<h2 id="org37f40d8">Introduction</h2>
-<div class="outline-text-2" id="text-org37f40d8">
+<section id="slide-org1077f54">
+<h2 id="org1077f54">Introduction</h2>
+<div class="outline-text-2" id="text-org1077f54">
 </div></section>
 </section>
 <section>
-<section id="slide-org03ee5e3">
-<h3 id="org03ee5e3">Have you ever experienced this?</h3>
+<section id="slide-org0d95dd4">
+<h3 id="org0d95dd4">Have you ever experienced this?</h3>
 
 <div class="figure">
 <p><img src="figure/phdcomics.png" alt="phdcomics.png" width="600" height="600" />
@@ -64,8 +62,8 @@
 </section>
 </section>
 <section>
-<section id="slide-orgc742a42">
-<h3 id="orgc742a42">Reproducible research</h3>
+<section id="slide-org439581d">
+<h3 id="org439581d">Reproducible research</h3>
 <blockquote nil>
 <p>
 An article about computational science in a scientific publication is
@@ -84,26 +82,35 @@ generated the figures.
 </section>
 </section>
 <section>
-<section id="slide-org60871c9">
-<h3 id="org60871c9">How can we do reproducible research?</h3>
+<section id="slide-org7aa4631">
+<h3 id="org7aa4631">How can we do reproducible research?</h3>
 
 <div class="figure">
 <p><img src="figure/emacs_startup.png" alt="emacs_startup.png" width="800" height="600" />
 </p>
 </div>
 
+<p>
+You can download my presentation at
+<a href="https://github.com/zngtian/intro_org_RR">https://github.com/zngtian/intro_org_RR</a> or
+</p>
+<div class="org-src-container">
+
+<pre><code class="shell" >git clone https://github.com/zngtian/intro_org_RR.git
+</code></pre>
+</div>
 
 </section>
 </section>
 <section>
-<section id="slide-org28d67e0">
-<h2 id="org28d67e0">Emacs</h2>
-<div class="outline-text-2" id="text-org28d67e0">
+<section id="slide-orgc67283b">
+<h2 id="orgc67283b">Emacs</h2>
+<div class="outline-text-2" id="text-orgc67283b">
 </div></section>
 </section>
 <section>
-<section id="slide-orgb7a4d3f">
-<h3 id="orgb7a4d3f">What is Emacs? A text editor.</h3>
+<section id="slide-orgb064996">
+<h3 id="orgb064996">What is Emacs? A text editor.</h3>
 <p>
 GNU Emacs is a free, portable, extensible text editor.
 </p>
@@ -119,12 +126,12 @@ GNU Emacs is a free, portable, extensible text editor.
 </section>
 </section>
 <section>
-<section id="slide-orgab40d77">
-<h3 id="orgab40d77">Emacs is beyond a text editor</h3>
-<div class="outline-text-3" id="text-orgab40d77">
+<section id="slide-orgb2b71d5">
+<h3 id="orgb2b71d5">Emacs is beyond a text editor</h3>
+<div class="outline-text-3" id="text-orgb2b71d5">
 </div></section>
-<section id="slide-orgefc4005">
-<h4 id="orgefc4005">Emacs is a LaTeX editor via AucTex</h4>
+<section id="slide-orgd5f4571">
+<h4 id="orgd5f4571">Emacs is a LaTeX editor via AucTex</h4>
 
 <div class="figure">
 <p><img src="figure/auctex_example.png" alt="auctex_example.png" width="800" height="600" />
@@ -133,8 +140,8 @@ GNU Emacs is a free, portable, extensible text editor.
 </div>
 
 </section>
-<section id="slide-org0104eff">
-<h4 id="org0104eff">Emacs is IDE for programming languages</h4>
+<section id="slide-orgc2b3349">
+<h4 id="orgc2b3349">Emacs is IDE for programming languages</h4>
 <ul>
 <li>Edit code with syntax highlighting</li>
 <li>Execute code within Emacs</li>
@@ -149,8 +156,8 @@ GNU Emacs is a free, portable, extensible text editor.
 </div>
 
 </section>
-<section id="slide-orgc1fd4f8">
-<h4 id="orgc1fd4f8">Emacs is an operating system</h4>
+<section id="slide-org5c3133a">
+<h4 id="org5c3133a">Emacs is an operating system</h4>
 <ul>
 <li>Emacs is an operating system, easily managing files and folders
 within a dired-directory interface.</li>
@@ -165,8 +172,8 @@ within a dired-directory interface.</li>
 </div>
 
 </section>
-<section id="slide-org9cc127b">
-<h4 id="org9cc127b">Emacs is a Git tool via Magit</h4>
+<section id="slide-orgeeb0435">
+<h4 id="orgeeb0435">Emacs is a Git tool via Magit</h4>
 
 <div class="figure">
 <p><img src="figure/magit_example.png" alt="magit_example.png" width="800" height="600" />
@@ -175,8 +182,8 @@ within a dired-directory interface.</li>
 </div>
 
 </section>
-<section id="slide-orgf997803">
-<h4 id="orgf997803">Emacs can do many other things</h4>
+<section id="slide-org58b2dc7">
+<h4 id="org58b2dc7">Emacs can do many other things</h4>
 <ul>
 <li>Emacs can do spell checking, reading news, checking and sending
 emails, etc., through plenty of contributed packages.</li>
@@ -189,12 +196,12 @@ project, take notes, and write dynamic documentation.</li>
 </section>
 </section>
 <section>
-<section id="slide-org4d961f0">
-<h3 id="org4d961f0">Installation and Configuration</h3>
-<div class="outline-text-3" id="text-org4d961f0">
+<section id="slide-orgb60e40a">
+<h3 id="orgb60e40a">Installation and Configuration</h3>
+<div class="outline-text-3" id="text-orgb60e40a">
 </div></section>
-<section id="slide-org2c1dd0f">
-<h4 id="org2c1dd0f">Installation</h4>
+<section id="slide-org04f85ee">
+<h4 id="org04f85ee">Installation</h4>
 <ul>
 <li>Homepage of GNU Emacs: <a href="https://www.gnu.org/software/emacs/">https://www.gnu.org/software/emacs/</a></li>
 
@@ -212,8 +219,8 @@ some of the mostly used packages.
 </aside>
 
 </section>
-<section id="slide-org2f77b02">
-<h4 id="org2f77b02">Configuration</h4>
+<section id="slide-org37a3d70">
+<h4 id="org37a3d70">Configuration</h4>
 <p>
 Emacs is customizable and all customized configuration can be done
 with either a <code>.emacs</code> file or <code>init.el</code> under the directory
@@ -226,15 +233,15 @@ customization.
 </p>
 
 </section>
-<section id="slide-org2371d3d">
-<h4 id="org2371d3d">My settings</h4>
+<section id="slide-org3a12348">
+<h4 id="org3a12348">My settings</h4>
 <p>
 All my settings have been uploaded to Github from where you can
 download or clone <code>git clone
 https://github.com/zngtian/.emacs.d.git</code>.
 </p>
 
-<ul class="org-ul"><li><a id="orgb6d43ad"></a>A peek of my settings<br  /><dl>
+<ul class="org-ul"><li><a id="orgb5a260a"></a>A peek of my settings<br  /><dl>
 <dt>init.el</dt><dd><a href="https://github.com/zngtian/.emacs.d/blob/master/init.el">https://github.com/zngtian/.emacs.d/blob/master/init.el</a></dd>
 <dt>myconfig.org</dt><dd><a href="https://github.com/zngtian/.emacs.d/blob/master/myconfig.org">https://github.com/zngtian/.emacs.d/blob/master/myconfig.org</a></dd>
 
@@ -244,12 +251,12 @@ https://github.com/zngtian/.emacs.d.git</code>.
 </section>
 </section>
 <section>
-<section id="slide-org2d8d4a1">
-<h3 id="org2d8d4a1">Basic usage of Emacs</h3>
-<div class="outline-text-3" id="text-org2d8d4a1">
+<section id="slide-org3d6303c">
+<h3 id="org3d6303c">Basic usage of Emacs</h3>
+<div class="outline-text-3" id="text-org3d6303c">
 </div></section>
-<section id="slide-orgda3c029">
-<h4 id="orgda3c029">Notation</h4>
+<section id="slide-orge133bbf">
+<h4 id="orge133bbf">Notation</h4>
 <p>
 In Emacs documentation, we often see the following notations
 </p>
@@ -265,8 +272,8 @@ In Emacs documentation, we often see the following notations
 </dl>
 
 </section>
-<section id="slide-org4dbe025">
-<h4 id="org4dbe025">Buffer and windows</h4>
+<section id="slide-org2833ef2">
+<h4 id="org2833ef2">Buffer and windows</h4>
 <p>
 The basic user interface of Emacs is in buffers and windows
 </p>
@@ -286,8 +293,8 @@ Demonstrate some operations on Emacs in this section.
 </aside>
 
 </section>
-<section id="slide-org3073625">
-<h4 id="org3073625">Motion within a buffer</h4>
+<section id="slide-org5a7f5bd">
+<h4 id="org5a7f5bd">Motion within a buffer</h4>
 <dl>
 <dt>C-f and M-f</dt><dd>move forward by one character and by one word</dd>
 <dt>C-b and M-b</dt><dd>move backward by one letter and by one word</dd>
@@ -298,8 +305,8 @@ Demonstrate some operations on Emacs in this section.
 </dl>
 
 </section>
-<section id="slide-orge32c328">
-<h4 id="orge32c328">Switch buffers and windows</h4>
+<section id="slide-org77d913a">
+<h4 id="org77d913a">Switch buffers and windows</h4>
 <dl>
 <dt>C-x 2</dt><dd>open a new buffer</dd>
 <dt>C-x 0</dt><dd>close the current buffer</dd>
@@ -311,8 +318,8 @@ Demonstrate some operations on Emacs in this section.
 </dl>
 
 </section>
-<section id="slide-org6f9c9d9">
-<h4 id="org6f9c9d9">Open, save, quit, and help</h4>
+<section id="slide-org0196580">
+<h4 id="org0196580">Open, save, quit, and help</h4>
 <dl>
 <dt>C-x C-f</dt><dd>open a new file</dd>
 <dt>C-x C-s</dt><dd>save the current buffer</dd>
@@ -324,8 +331,8 @@ Demonstrate some operations on Emacs in this section.
 </dl>
 
 </section>
-<section id="slide-org06cfc8e">
-<h4 id="org06cfc8e">Copy, yank, and delete</h4>
+<section id="slide-org0dd5a2f">
+<h4 id="org0dd5a2f">Copy, yank, and delete</h4>
 <dl>
 <dt>C-SPC</dt><dd>set a mark and move the cursor around to select a region</dd>
 <dt>C-w</dt><dd>kill (cut)</dd>
@@ -339,8 +346,8 @@ Demonstrate some operations on Emacs in this section.
 </dl>
 
 </section>
-<section id="slide-orgba32cc0">
-<h4 id="orgba32cc0">Tutorial and cheat sheet</h4>
+<section id="slide-orgb3dead0">
+<h4 id="orgb3dead0">Tutorial and cheat sheet</h4>
 <dl>
 <dt>C-h t</dt><dd>open the complete tutorial</dd>
 
@@ -354,14 +361,14 @@ Demonstrate some operations on Emacs in this section.
 </section>
 </section>
 <section>
-<section id="slide-org6d80b0c">
-<h2 id="org6d80b0c">Org-Mode</h2>
-<div class="outline-text-2" id="text-org6d80b0c">
+<section id="slide-org636be8c">
+<h2 id="org636be8c">Org-Mode</h2>
+<div class="outline-text-2" id="text-org636be8c">
 </div></section>
 </section>
 <section>
-<section id="slide-org47e0f6b">
-<h3 id="org47e0f6b">What is org-mode</h3>
+<section id="slide-org6b1bc8e">
+<h3 id="org6b1bc8e">What is org-mode</h3>
 <p>
 Org mode is one of the most popular contributed packages in Emacs. It
 can accomplish a variety of work including, but not limited to,
@@ -380,12 +387,12 @@ can accomplish a variety of work including, but not limited to,
 </section>
 </section>
 <section>
-<section id="slide-orgcf4ff2a">
-<h3 id="orgcf4ff2a">Structured document</h3>
-<div class="outline-text-3" id="text-orgcf4ff2a">
+<section id="slide-org465a97a">
+<h3 id="org465a97a">Structured document</h3>
+<div class="outline-text-3" id="text-org465a97a">
 </div></section>
-<section id="slide-org03c8924">
-<h4 id="org03c8924">Headline</h4>
+<section id="slide-org807373c">
+<h4 id="org807373c">Headline</h4>
 <pre class="example">
 * Top level headline
 ** Second level
@@ -405,8 +412,8 @@ can accomplish a variety of work including, but not limited to,
 </dl>
 
 </section>
-<section id="slide-orgf4c72df">
-<h4 id="orgf4c72df">Lists</h4>
+<section id="slide-org278538d">
+<h4 id="org278538d">Lists</h4>
 <pre class="example">
 - Unordered list
   + Item 1
@@ -427,12 +434,12 @@ can accomplish a variety of work including, but not limited to,
 </section>
 </section>
 <section>
-<section id="slide-org24cbea9">
-<h3 id="org24cbea9">Special elements</h3>
-<div class="outline-text-3" id="text-org24cbea9">
+<section id="slide-org01cfd14">
+<h3 id="org01cfd14">Special elements</h3>
+<div class="outline-text-3" id="text-org01cfd14">
 </div></section>
-<section id="slide-orgfd00a51">
-<h4 id="orgfd00a51">Links</h4>
+<section id="slide-org175a4fd">
+<h4 id="org175a4fd">Links</h4>
 <ul>
 <li><p>
 The basic syntax for a link:
@@ -442,7 +449,7 @@ The basic syntax for a link:
 </pre></li>
 
 <li><p>
-Internal link: <a href="#/slide-orgf4c72df">Lists</a>
+Internal link: <a href="#/slide-org278538d">Lists</a>
 </p>
 <pre class="example">
 [[Lists]]
@@ -465,8 +472,8 @@ URL: <a href="http://rri.wvu.edu/">http://rri.wvu.edu/</a>
 </ul>
 
 </section>
-<section id="slide-orgaa9baab">
-<h4 id="orgaa9baab">Blocks</h4>
+<section id="slide-orgf856594">
+<h4 id="orgf856594">Blocks</h4>
 <ul>
 <li>Blocks are defined by <code>#+BEGIN_... and #+END_...</code></li>
 
@@ -507,8 +514,8 @@ but not any simpler &#x2013; Albert Einstein
 </ul>
 
 </section>
-<section id="slide-org8a7bf89">
-<h4 id="org8a7bf89">Mathematics</h4>
+<section id="slide-orgc1dfe46">
+<h4 id="orgc1dfe46">Mathematics</h4>
 <p>
 Org mode can contain LaTeX math fragments that don't need any special
 marking. Just do as in LaTeX.
@@ -536,8 +543,8 @@ either \[ a=+\sqrt{2} \text{ or }  a=-\sqrt{2} \]
 </p>
 
 </section>
-<section id="slide-orgd7e2334">
-<h4 id="orgd7e2334">Table</h4>
+<section id="slide-orgbcc961b">
+<h4 id="orgbcc961b">Table</h4>
 <ul>
 <li><p>
 ‘|’ as the first non-whitespace character starts a table. The
@@ -586,8 +593,8 @@ following texts yield a table in HTML export
 </ul>
 
 </section>
-<section id="slide-org7e708fe">
-<h4 id="org7e708fe">Calculation in a table</h4>
+<section id="slide-org44756af">
+<h4 id="org44756af">Calculation in a table</h4>
 <ul>
 <li>We can define formula for a field, a row, or a column by starting a
 field with "="</li>
@@ -645,8 +652,8 @@ field with "="</li>
 </section>
 </section>
 <section>
-<section id="slide-orgbebce07">
-<h3 id="orgbebce07">Exporting</h3>
+<section id="slide-orga9534a7">
+<h3 id="orga9534a7">Exporting</h3>
 <ul>
 <li>An org file can be exported to a variety of formats, including
 latex, beamer, html, odt, etc.</li>
@@ -664,12 +671,12 @@ etc.</li>
 </section>
 </section>
 <section>
-<section id="slide-orgf4fed91">
-<h3 id="orgf4fed91">Tasks and agenda view</h3>
-<div class="outline-text-3" id="text-orgf4fed91">
+<section id="slide-orgfe18f60">
+<h3 id="orgfe18f60">Tasks and agenda view</h3>
+<div class="outline-text-3" id="text-orgfe18f60">
 </div></section>
-<section id="slide-org050da61">
-<h4 id="org050da61">A sneak peek of my agenda</h4>
+<section id="slide-org5f9295d">
+<h4 id="org5f9295d">A sneak peek of my agenda</h4>
 <p>
 Org mode is not just a text editor that can include a rich variety of
 elements but also a handy tool to plan daily life and manage
@@ -685,8 +692,8 @@ research projects.
 
 
 </section>
-<section id="slide-org5841477">
-<h4 id="org5841477">To-do items</h4>
+<section id="slide-orgc0782c6">
+<h4 id="orgc0782c6">To-do items</h4>
 <p>
 TODO items in org mode are headlines defined by TODO keywords after
 asterisks.
@@ -706,8 +713,8 @@ asterisks.
 
 
 </section>
-<section id="slide-org66dcaa2">
-<h4 id="org66dcaa2">Schedule and deadline</h4>
+<section id="slide-org75c9283">
+<h4 id="org75c9283">Schedule and deadline</h4>
 <p>
 We can set schedule and deadline to TODO items.
 </p>
@@ -733,8 +740,8 @@ We can set schedule and deadline to TODO items.
 
 
 </section>
-<section id="slide-org6daf617">
-<h4 id="org6daf617">Agenda view</h4>
+<section id="slide-org2155fb9">
+<h4 id="org2155fb9">Agenda view</h4>
 <p>
 All TODO items, schedules, and deadlines can be viewed in the Agenda
 view in org mode.
@@ -756,18 +763,18 @@ go to the headline of a TODO item.
 </section>
 </section>
 <section>
-<section id="slide-orgc35a9f5">
-<h2 id="orgc35a9f5">Reproducible research with org-mode</h2>
-<div class="outline-text-2" id="text-orgc35a9f5">
+<section id="slide-org3fbff71">
+<h2 id="org3fbff71">Reproducible research with org-mode</h2>
+<div class="outline-text-2" id="text-org3fbff71">
 </div></section>
 </section>
 <section>
-<section id="slide-org48c0490">
-<h3 id="org48c0490">Reproducible research: basics</h3>
-<div class="outline-text-3" id="text-org48c0490">
+<section id="slide-org5d24479">
+<h3 id="org5d24479">Reproducible research: basics</h3>
+<div class="outline-text-3" id="text-org5d24479">
 </div></section>
-<section id="slide-orgce6837f">
-<h4 id="orgce6837f">What is reproducible research?</h4>
+<section id="slide-orgb7e0b48">
+<h4 id="orgb7e0b48">What is reproducible research?</h4>
 <blockquote nil>
 <p>
 The data and code used to make a finding are available and they are
@@ -778,17 +785,17 @@ sufficient for an independent researcher to recreate the finding.
 
 
 </section>
-<section id="slide-orgf9e5767">
-<h4 id="orgf9e5767">Why should we do reproducible research?</h4>
-<div class="outline-text-4" id="text-orgf9e5767">
-</div><ul class="org-ul"><li><a id="org3b0f944"></a>For readers<br  /><ul>
+<section id="slide-org4147aec">
+<h4 id="org4147aec">Why should we do reproducible research?</h4>
+<div class="outline-text-4" id="text-org4147aec">
+</div><ul class="org-ul"><li><a id="orgc429f78"></a>For readers<br  /><ul>
 <li>Easy for reviewers to test and validate your findings.</li>
 <li>Easy for readers to reuse your code in their research.</li>
 <li>Make your paper a reliable citation.</li>
 
 </ul></li>
 
-<li><a id="orge06fd1e"></a>For ourselves<br  /><ul>
+<li><a id="org79ccd81"></a>For ourselves<br  /><ul>
 <li>Easy for us to tract and retrospect what we have done.</li>
 <li>Helpful to have good research habits and workflow.</li>
 <li>Facilitating team work.</li>
@@ -797,8 +804,8 @@ sufficient for an independent researcher to recreate the finding.
 
 
 </section>
-<section id="slide-org8ff9d52">
-<h4 id="org8ff9d52">What is a workflow of reproducible research?</h4>
+<section id="slide-org8c8666d">
+<h4 id="org8c8666d">What is a workflow of reproducible research?</h4>
 
 <div class="figure">
 <p><img src="figure/research_pipline.png" alt="research_pipline.png" width="700" height="600" />
@@ -808,8 +815,8 @@ sufficient for an independent researcher to recreate the finding.
 
 
 </section>
-<section id="slide-orga964819">
-<h4 id="orga964819">What are necessary elements of reproducible research?</h4>
+<section id="slide-org9ac7ee8">
+<h4 id="org9ac7ee8">What are necessary elements of reproducible research?</h4>
 <p>
 Roger Peng (2015) summarizes four essential elements to make results
 reproducible:
@@ -826,12 +833,12 @@ reproducible:
 </section>
 </section>
 <section>
-<section id="slide-org36cb326">
-<h3 id="org36cb326">Literate programming</h3>
-<div class="outline-text-3" id="text-org36cb326">
+<section id="slide-org5ceccd5">
+<h3 id="org5ceccd5">Literate programming</h3>
+<div class="outline-text-3" id="text-org5ceccd5">
 </div></section>
-<section id="slide-org6f0b95e">
-<h4 id="org6f0b95e">What is literate programming?</h4>
+<section id="slide-org3913fe7">
+<h4 id="org3913fe7">What is literate programming?</h4>
 <p>
 Literate programming (Donald Knuth, 1992) is the central part of
 reproducible research.
@@ -850,8 +857,8 @@ Typically, literate programming involves the following three steps
 </ol>
 
 </section>
-<section id="slide-org36679f5">
-<h4 id="org36679f5">Available tools for literate programming</h4>
+<section id="slide-orga012c83">
+<h4 id="orga012c83">Available tools for literate programming</h4>
 <ul>
 <li>WEB (Knuth, 1983)</li>
 <li>Noweb (Ramsey, 1994)</li>
@@ -866,12 +873,12 @@ Typically, literate programming involves the following three steps
 </section>
 </section>
 <section>
-<section id="slide-org9a5a2b0">
-<h3 id="org9a5a2b0">Literate programming with Org-mode</h3>
-<div class="outline-text-3" id="text-org9a5a2b0">
+<section id="slide-orgbf2158a">
+<h3 id="orgbf2158a">Literate programming with Org-mode</h3>
+<div class="outline-text-3" id="text-orgbf2158a">
 </div></section>
-<section id="slide-orgfb1d2c0">
-<h4 id="orgfb1d2c0">Source code block</h4>
+<section id="slide-org5516897">
+<h4 id="org5516897">Source code block</h4>
 <p>
 The basic structure of code blocks is as follows
 </p>
@@ -892,8 +899,8 @@ src_&lt;language&gt;[&lt;header arguments&gt;]{&lt;body&gt;}
 </pre>
 
 </section>
-<section id="slide-org861fb70">
-<h4 id="org861fb70">Basic settings</h4>
+<section id="slide-orgd88a566">
+<h4 id="orgd88a566">Basic settings</h4>
 <pre class="example">
 #+BEGIN_SRC emacs-lisp :eval no
   (org-babel-do-load-languages
@@ -911,8 +918,8 @@ src_&lt;language&gt;[&lt;header arguments&gt;]{&lt;body&gt;}
 </pre>
 
 </section>
-<section id="slide-orgd0dcf6a">
-<h4 id="orgd0dcf6a">Header arguments</h4>
+<section id="slide-org316b97d">
+<h4 id="org316b97d">Header arguments</h4>
 <p>
 Header arguments fine-tune the behaviors of a source block.
 </p>
@@ -960,8 +967,8 @@ Header arguments fine-tune the behaviors of a source block.
 </table>
 
 </section>
-<section id="slide-orgf9b8f66">
-<h4 id="orgf9b8f66">Results in raw format</h4>
+<section id="slide-org99ba57b">
+<h4 id="org99ba57b">Results in raw format</h4>
 <pre class="example">
 #+BEGIN_SRC R :exports both :results output
 library(ggplot2)
@@ -980,8 +987,8 @@ head(mpg[1:5])
 
 
 </section>
-<section id="slide-org9d230ed">
-<h4 id="org9d230ed">Results in org tables</h4>
+<section id="slide-orgd3e9dcd">
+<h4 id="orgd3e9dcd">Results in org tables</h4>
 <pre class="example">
 #+BEGIN_SRC R :exports results :results value table :colnames yes :cache yes
 head(mpg[1:5])
@@ -999,8 +1006,8 @@ head(mpg[1:5])
 </pre>
 
 </section>
-<section id="slide-org08ab5a7">
-<h4 id="org08ab5a7">Results in figures</h4>
+<section id="slide-orgcdb84f8">
+<h4 id="orgcdb84f8">Results in figures</h4>
 <pre class="example">
 #+BEGIN_SRC R :exports both :results output graphics :file mpg.png
   ggplot(mpg, aes(displ, cty, colour = class)) +
@@ -1014,8 +1021,8 @@ head(mpg[1:5])
 </pre>
 
 </section>
-<section id="slide-orgb31e4be">
-<h4 id="orgb31e4be">The figure generated</h4>
+<section id="slide-orgb56874a">
+<h4 id="orgb56874a">The figure generated</h4>
 
 <div class="figure">
 <p><img src="figure/mpg.png" alt="mpg.png" width="600" height="500" />
@@ -1024,8 +1031,8 @@ head(mpg[1:5])
 </div>
 
 </section>
-<section id="slide-org63d2e27">
-<h4 id="org63d2e27">Results in latex</h4>
+<section id="slide-orgfa71c9a">
+<h4 id="orgfa71c9a">Results in latex</h4>
 <pre class="example">
 #+BEGIN_SRC R :exports both :results output latex
 library(stargazer)
@@ -1057,12 +1064,12 @@ hwy &amp; 234 &amp; 23.440 &amp; 5.955 &amp; 12 &amp; 44 \\
 </pre>
 
 </section>
-<section id="slide-orgcb867d7">
-<h4 id="orgcb867d7">The LaTeX table generated</h4>
+<section id="slide-org52c3ef5">
+<h4 id="org52c3ef5">The LaTeX table generated</h4>
 
 </section>
-<section id="slide-org1ee3154">
-<h4 id="org1ee3154">An mini example of literate programming</h4>
+<section id="slide-orgbc10549">
+<h4 id="orgbc10549">An mini example of literate programming</h4>
 <p>
 The following file is an example of reproducible research, which I
 used in teaching Econometrics.
@@ -1076,8 +1083,8 @@ used in teaching Econometrics.
 </section>
 </section>
 <section>
-<section id="slide-org30890c5">
-<h3 id="org30890c5">Tutorial sources</h3>
+<section id="slide-org83071ff">
+<h3 id="org83071ff">Tutorial sources</h3>
 <dl>
 <dt>John Kitchin's blog</dt><dd><a href="http://kitchingroup.cheme.cmu.edu/blog/2014/08/08/What-we-are-using-org-mode-for/">http://kitchingroup.cheme.cmu.edu/blog/2014/08/08/What-we-are-using-org-mode-for/</a></dd>
 
@@ -1090,8 +1097,8 @@ used in teaching Econometrics.
 </section>
 </div>
 </div>
-<script src="file:////Users/ztian/reveal.js/lib/js/head.min.js"></script>
-<script src="file:////Users/ztian/reveal.js/js/reveal.js"></script>
+<script src="./reveal.js/lib/js/head.min.js"></script>
+<script src="./reveal.js/js/reveal.js"></script>
 
 <script>
 // Full list of configuration options available here:
@@ -1123,10 +1130,10 @@ multiplex: {
 
 // Optional libraries used to extend on reveal.js
 dependencies: [
-{ src: 'file:///Users/ztian/reveal.js/plugin/reveal.js-menu/menu.js' },
- { src: 'file:////Users/ztian/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
- { src: 'file:////Users/ztian/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: 'file:////Users/ztian/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }]
+{ src: './reveal.js/plugin/reveal.js-menu/menu.js' },
+ { src: './reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: './reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: './reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }]
 });
 </script>
 </body>
