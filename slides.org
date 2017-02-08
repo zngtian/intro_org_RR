@@ -696,11 +696,12 @@ head(mpg[1:5])
 #+END_EXAMPLE
 
 #+BEGIN_SRC R :exports none :results output graphics :file figure/mpg.png :cache yes
+  library(ggplot2)
   ggplot(mpg, aes(displ, cty, colour = class)) +
       geom_point()
 #+END_SRC
 
-#+RESULTS[43aa2acc67681f12a14ea4bdac1deeb8292c9ba8]:
+#+RESULTS[96aa6345f0d972c115da4de2caf963468fd86bb3]:
 [[file:figure/mpg.png]]
 
 *** The figure generated
