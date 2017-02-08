@@ -32,6 +32,15 @@
 
 * Introduction
 
+#+BEGIN_NOTES
+- This workshop is to share my experience of using emacs and org mode
+  to document my research.
+- I have been using it for three years. But there were some back and
+  forth, abandoning it and picking it up again.
+- This workshop tries to help you have a quick start with emacs and
+  org mode, avoiding the zig-zag path I learned it.
+#+END_NOTES
+
 ** Have you ever experienced this?
 :PROPERTIES:
 :BEAMER_env: frame
@@ -40,6 +49,19 @@
 #+ATTR_HTML: :width 600 :height 600
 #+ATTR_LATEX: :width 0.5\textwidth
 [[file:figure/phdcomics.png]]
+
+#+BEGIN_NOTES
+- Briefly describe the comic.
+- Tell them my story in the ECIO model.
+  - Write some code to solve a problem.
+  - Document them in the python file very casually.
+  - Write separate files for documentation, hard to read.
+  - Leave followers (Xueting, Peter) hard to figure it out.
+
+- Raise the question: IS THERE A GOOD WAY TO DOCUMENT CODE?
+  - Easy to document
+  - Combine the code and documentation with one file
+#+END_NOTES
 
 
 ** Reproducible research
@@ -57,6 +79,11 @@
   -- Buckheit and Donoho (1995)
   #+END_QUOTE
 
+#+BEGIN_NOTES
+- Reflect the question raised. Answer is to do reproducible research.
+- The spirit of reproducible research is in the following quotation.
+#+END_NOTES
+
 
 ** How can we do reproducible research?
 :PROPERTIES:
@@ -70,6 +97,14 @@
 You can download my presentation at
 https://github.com/zngtian/intro_org_RR
 
+#+BEGIN_NOTES
+- HOW CAN WE IMPLEMENT REPRODUCIBLE RESEARCH?
+- This workshop introduces a very powerful and handy tool: Emacs and
+  its org-mode.
+- Describe the snapshot.
+- Mention the link.
+#+END_NOTES
+
 
 * Emacs
 
@@ -82,7 +117,8 @@ GNU Emacs is a free, portable, extensible text editor.
 
 - Free :: Open source, freely copyable and redistributable.
 - Portable :: Run on many machines under different operating systems.
-- Extensible :: Customizable for all aspect and  many contributed packages,
+- Extensible :: Customizable for all aspect and have many contributed
+                packages.
 
 
 ** Emacs is beyond a text editor
@@ -103,6 +139,12 @@ GNU Emacs is a free, portable, extensible text editor.
 #+ATTR_HTML: :width 800 :height 600
 #+ATTR_LATEX: :width 0.6\textwidth
 [[file:figure/r_example.png]]
+
+#+BEGIN_NOTES
+- Mention that emacs can also be the IDE for writing python, c/c++,
+  html.
+- Maybe show changing to python-mode in the *scratch* buffer.
+#+END_NOTES
 
 *** Emacs is an operating system
 
@@ -138,8 +180,9 @@ GNU Emacs is a free, portable, extensible text editor.
   http://vgoulet.act.ulaval.ca/en/emacs/
 
 #+BEGIN_NOTES
-I personally prefer the second option because it has already included
-some of the mostly used packages.
+- I personally prefer the second option because it has already included
+  some of the mostly used packages.
+- Open the link in a new tab.
 #+END_NOTES
 
 *** Configuration
@@ -165,6 +208,11 @@ git clone https://github.com/zngtian/.emacs.d.git
 - init.el :: https://github.com/zngtian/.emacs.d/blob/master/init.el
 - myconfig.org :: https://github.com/zngtian/.emacs.d/blob/master/myconfig.org
 
+#+BEGIN_NOTES
+- Open the files in new tabs.
+- Tell them to change the paths and files names in myconfig.org.
+#+END_NOTES
+
 
 ** Basic usage of Emacs
 
@@ -188,7 +236,8 @@ The basic user interface of Emacs is in buffers and windows
 [[file:figure/buffer_example.png]]
 
 #+BEGIN_NOTES
-Demonstrate some operations on Emacs in this section.
+- Explain each part.
+- Demonstrate some operations on Emacs in this section.
 #+END_NOTES
 
 *** Motion within a buffer
@@ -198,6 +247,13 @@ Demonstrate some operations on Emacs in this section.
 - C-n and C-p :: move downward and upward
 - C-v and M-v :: scroll down and up
 - M-< and M-> :: move to the start and to the end of a buffer
+
+#+BEGIN_NOTES
+- Not to show these commands right now.
+- Demonstrate all these operations when showing the example via
+  mwe-log-commands.
+#+END_NOTES
+
 
 *** Switch buffers and windows
 
