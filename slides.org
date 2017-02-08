@@ -80,9 +80,9 @@ https://github.com/zngtian/intro_org_RR
 
 GNU Emacs is a free, portable, extensible text editor.
 
-- Free: Open source, freely copyable and redistributable.
-- Portable: Run on many machines under different operating systems.
-- Extensible: Customizable for all aspect and  many contributed packages,
+- Free :: Open source, freely copyable and redistributable.
+- Portable :: Run on many machines under different operating systems.
+- Extensible :: Customizable for all aspect and  many contributed packages,
 
 
 ** Emacs is beyond a text editor
@@ -154,10 +154,13 @@ customization.
 *** My settings
 
 All my settings have been uploaded to Github from where you can
-download or clone =git clone
-https://github.com/zngtian/.emacs.d.git=.
+download or
 
-**** A peek of my settings
+#+BEGIN_SRC sh
+git clone https://github.com/zngtian/.emacs.d.git
+#+END_SRC
+
+**** A sneak peek of my settings
 
 - init.el :: https://github.com/zngtian/.emacs.d/blob/master/init.el
 - myconfig.org :: https://github.com/zngtian/.emacs.d/blob/master/myconfig.org

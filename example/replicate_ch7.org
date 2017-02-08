@@ -2,7 +2,7 @@
 #+AUTHOR: Zheng Tian
 #+DATE:
 #+OPTIONS: H:2 num:1 toc:nil ^:{}
-#+PROPERTY: header-args:R :session *myR* :tangle yes :eval no
+#+PROPERTY: header-args:R :session *myR* :tangle yes :eval yes
 
 #+SETUPFILE: theme-readtheorg.setup
 
