@@ -254,7 +254,6 @@ The basic user interface of Emacs is in buffers and windows
   mwe-log-commands.
 #+END_NOTES
 
-
 *** Switch buffers and windows
 
 - C-x 2 :: open a new buffer
@@ -577,11 +576,14 @@ sufficient for an independent researcher to recreate the finding.
 
 *** What is a workflow of reproducible research?
 
-#+CAPTION: A workflow of reproducible research (Source: Peng (2015))
+#+CAPTION: A workflow of reproducible research (Source: Peng, 2015)
 #+ATTR_LATEX: :width 0.8\textwidth :height 0.7\textheight
-#+ATTR_HTML: :width 700 :height 600
+#+ATTR_HTML: :width 750 :height 570
 [[file:figure/research_pipline.png]]
 
+#+BEGIN_NOTES
+- Don't forget mention the direction of readers.
+#+END_NOTES
 
 *** What are necessary elements of reproducible research?
 
@@ -599,7 +601,6 @@ reproducible:
 
 Literate programming (Donald Knuth, 1992) is the central part of
 reproducible research.
-
 
 Typically, literate programming involves the following three steps
 (Xie, 2015):
@@ -619,7 +620,7 @@ Typically, literate programming involves the following three steps
 
 ** Literate programming with Org-mode
 
-*** Source code block
+*** Source code blocks
 
 The basic structure of code blocks is as follows
 
@@ -656,7 +657,7 @@ The structure of an inline code block is
 
 *** Header arguments
 
-Header arguments fine-tune the behaviors of a source block.
+Header arguments fine-tune the behaviors of source code blocks.
 
 | Header arguments | Example                                 |
 |------------------+-----------------------------------------|
