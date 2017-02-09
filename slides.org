@@ -94,15 +94,11 @@
 #+ATTR_LATEX: :width 0.8\textwidth
 [[file:figure/emacs_startup.png]]
 
-You can download my presentation at
-https://github.com/zngtian/intro_org_RR
-
 #+BEGIN_NOTES
 - HOW CAN WE IMPLEMENT REPRODUCIBLE RESEARCH?
 - This workshop introduces a very powerful and handy tool: Emacs and
   its org-mode.
 - Describe the snapshot.
-- Mention the link.
 #+END_NOTES
 
 
@@ -147,9 +143,6 @@ GNU Emacs is a free, portable, extensible text editor.
 #+END_NOTES
 
 *** Emacs is an operating system
-
-- Emacs is an operating system, easily managing files and folders
-  within a dired-directory interface.
 
 #+ATTR_LATEX: :width 0.6\textwidth :height 0.6\textheight
 #+ATTR_HTML: :width 600 :height 550
@@ -228,7 +221,7 @@ In Emacs documentation, we often see the following notations
 
 *** Buffer and windows
 
-The basic user interface of Emacs is in buffers and windows
+The basic user interface of Emacs uses buffers and windows.
 
 #+ATTR_LATEX: :width 1.0\textwidth :height 0.8\textheight
 #+ATTR_HTML: :width 900 :height 550
@@ -302,7 +295,7 @@ The basic user interface of Emacs is in buffers and windows
 Org mode is one of the most popular contributed packages in Emacs. It
 can accomplish a variety of work including, but not limited to,
 
-- taking notes with structured documentation,
+- taking notes with structured documents,
 - assigning tasks and scheduling them,
 - editing tables and doing calculation,
 - exporting to pdf, html, odt files,
@@ -310,6 +303,10 @@ can accomplish a variety of work including, but not limited to,
 
 
 ** Structured document
+
+#+BEGIN_NOTES
+This is the fundamental function of org mode.
+#+END_NOTES
 
 *** Headline
 :PROPERTIES:
@@ -331,6 +328,10 @@ can accomplish a variety of work including, but not limited to,
 - S-<TAB> :: global cycling.
 - M-left and M-right :: promote and demote a heading
 
+#+BEGIN_NOTES
+- Use org-bullets to make document structure look neat.
+#+END_NOTES
+
 *** Lists
 :PROPERTIES:
 :BEAMER_opt(Opt): shrink
@@ -347,7 +348,7 @@ can accomplish a variety of work including, but not limited to,
 - Description
   - Tom :: a cat
   - Jerry :: a mouse
-- List with check box
+- List with check box [1/2]
   - [X] Do this
   - [ ] Do that
 #+END_EXAMPLE
@@ -376,6 +377,11 @@ can accomplish a variety of work including, but not limited to,
   #+BEGIN_SRC
   [[http://rri.wvu.edu/]]
   #+END_SRC
+
+
+#+BEGIN_NOTES
+- Use C-c l to save a link, and C-c C-l to insert the saved link.
+#+END_NOTES
 
 *** Blocks
 :PROPERTIES:
@@ -410,6 +416,10 @@ can accomplish a variety of work including, but not limited to,
    #+END_QUOTE
   #+END_EXAMPLE
 
+#+BEGIN_NOTES
+- Just mention the source code block here.
+#+END_NOTES
+
 *** Mathematics
 
 Org mode can contain LaTeX math fragments that don't need any special
@@ -431,6 +441,10 @@ either $$ a=+\sqrt{2} \text{ or }  a=-\sqrt{2} $$
 If $a^2=b$ and \( b=2 \), then the solution must be
 either $$ a=+\sqrt{2} \text{ or }  a=-\sqrt{2} $$
 
+#+BEGIN_NOTES
+- Mention the preview function. C-c C-x C-l
+#+END_NOTES
+
 *** Table
 
 - ‘|’ as the first non-whitespace character starts a table. The
@@ -451,7 +465,7 @@ either $$ a=+\sqrt{2} \text{ or }  a=-\sqrt{2} $$
 *** Calculation in a table
 
 - We can define formula for a field, a row, or a column by starting a
-  field with "="
+  field with "=" or ":=".
 
 #+BEGIN_EXAMPLE
 | Name  | Age | Score |
@@ -477,9 +491,10 @@ either $$ a=+\sqrt{2} \text{ or }  a=-\sqrt{2} $$
 
 - An org file can be exported to a variety of formats, including
   latex, beamer, html, odt, etc.
-- ~C-c C-e~: start the export dispatcher.
-- Then you can select from several options. Try ~C-c C-e l O~ to
-  generate the beamer file.
+- C-c C-e: start the export dispatcher.
+  - l o: export to pdf and open it.
+  - h o: export to html and open it.
+
 - This presentation is exported with the ~og-reveal~ package.
 - Export settings can be set using some keywords, such as
   ~#+TITLE, #+AUTHOR, #+OPTIONS, #+LATEX_HEADER, #+HTML_HEADER~,
@@ -488,17 +503,25 @@ either $$ a=+\sqrt{2} \text{ or }  a=-\sqrt{2} $$
 
 ** Tasks and agenda view
 
+#+BEGIN_NOTES
+This is my favorite function of org mode.
+#+END_NOTES
+
 *** A sneak peek of my agenda
 
-Org mode is not just a text editor that can include a rich variety of
-elements but also a handy tool to plan daily life and manage
+The org mode is a handy tool to plan daily life and manage
 research projects.
 
 #+CAPTION: An illustration of agenda view
 #+ATTR_LATEX: :width 0.6\textwidth :height 0.5\textheight
-#+ATTR_HTML: :width 700 :height 600
+#+ATTR_HTML: :width 700 :height 550
 [[file:figure/agenda_example.png]]
 
+#+BEGIN_NOTES
+- This graph includes many elements for assigning tasks
+  - Todo list
+  - Schedule
+#+END_NOTES
 
 *** To-do items
 
@@ -637,6 +660,12 @@ The structure of an inline code block is
    src_<language>[<header arguments>]{<body>}
 #+END_EXAMPLE
 
+#+BEGIN_NOTES
+This is the key component for carrying out literate programming in org
+mode.
+#+END_NOTES
+
+
 *** Basic settings
 
 #+BEGIN_EXAMPLE
@@ -738,6 +767,10 @@ head(mpg[1:5])
 | audi         | a4    |   2.8 | 1999 |   6 |
 | audi         | a4    |   2.8 | 1999 |   6 |
 
+#+BEGIN_NOTES
+- Mention the change in header argument :results and :cache
+#+END_NOTES
+
 *** Results in figures
 :PROPERTIES:
 :BEAMER_opt(Opt): shrink
@@ -763,6 +796,10 @@ head(mpg[1:5])
 
 #+RESULTS[96aa6345f0d972c115da4de2caf963468fd86bb3]:
 [[file:figure/mpg.png]]
+
+#+BEGIN_NOTES
+- Mention the value of :results graphics
+#+END_NOTES
 
 *** The figure generated
 
@@ -835,7 +872,6 @@ hwy & 234 & 23.440 & 5.955 & 12 & 44 \\
 
 *** The LaTeX table generated
 
-#+RESULTS:
 #+BEGIN_EXPORT latex
 
 % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
@@ -858,6 +894,10 @@ hwy & 234 & 23.440 & 5.955 & 12 & 44 \\
 \end{table}
 #+END_EXPORT
 
+#+BEGIN_NOTES
+- The table is not shown in there
+#+END_NOTES
+
 *** An mini example of literate programming
 
 The following file is an example of reproducible research, which I
@@ -865,6 +905,13 @@ used in teaching Econometrics.
 
 [[file:example/replicate_ch7.org]]
 
+#+BEGIN_NOTES
+- Open the file.
+- This is a lecture notes for demonstrating R in the class of
+  Econometrics. The example replicates the regression models in
+  Chapter 7 in Stock and Watson's book of Introduction to
+  Econometrics.
+#+END_NOTES
 
 ** Tutorial sources
 :PROPERTIES:
@@ -878,6 +925,27 @@ used in teaching Econometrics.
   https://www.youtube.com/watch?v=1-dUkyn_fZA&t=126s
 
 - Vikas Rawal's tutorial :: https://github.com/vikasrawal/orgpaper/blob/master/orgpapers.org
+
+
+** Version information
+
+- OS X El Capitan (Version 10.11.6)
+- GNU Emacs version 25.1.1
+- Org mode version 9.0.3
+- Ess mode version 16.10
+
+
+** Q & A
+
+You can download my presentation at
+https://github.com/zngtian/intro_org_RR or
+#+BEGIN_SRC sh
+git clone https://github.com/zngtian/intro_org_RR.git
+#+END_SRC
+
+Any comments and questions are welcomed.
+
+Thanks!
 
 
 

@@ -2,7 +2,7 @@
 #+AUTHOR: Zheng Tian
 #+DATE:
 #+OPTIONS: H:2 num:1 toc:nil ^:{}
-#+PROPERTY: header-args:R :session *myR* :tangle yes :eval yes
+#+PROPERTY: header-args:R :session *myR* :tangle yes :eval yes :tangle yes
 
 #+SETUPFILE: theme-readtheorg.setup
 
@@ -10,13 +10,15 @@
 #+LATEX_HEADER: \usepackage{setspace}
 #+LATEX_HEADER: \singlespacing
 #+LATEX_HEADER: \usepackage{parskip}
+#+LATEX_HEADER: \usepackage[round]{natbib}
+
 
 * Introduction
 This tutorial is to show how to estimate a multiple regression model
 and perform linear hypothesis testing. The application is about the
 test scores of the California school districts. We will use R to
 replicate the multiple regression with this data set in Chapter 6, and
-the hypothesis tests in Chapter 7.
+the hypothesis tests in Chapter 7, citet:StockWatson2011.
 
 Before running all R codes, we may first load all the packages.
 #+BEGIN_SRC R :results output silent :exports code
@@ -540,6 +542,7 @@ F Statistic & 22.575$^{***}$ & 155.014$^{***}$ & 476.306$^{***}$ & 234.638$^{***
 
 
 * Appendix: R codes
+
 #+BEGIN_EXAMPLE
 library(AER)
 
@@ -727,9 +730,5 @@ stargazer(model1, model2, model3, model4, model5,
 #+END_EXAMPLE
 
 
-
-
-
-
-
-
+bibliography:example.bib
+bibliographystyle:plainnat
