@@ -1,4 +1,4 @@
-% Created 2017-02-07 Tue 19:06
+% Created 2017-02-08 Wed 23:29
 % Intended LaTeX compiler: pdflatex
 \documentclass[presentation]{beamer}
 \usepackage[utf8]{inputenc}
@@ -36,16 +36,15 @@
 
 
 \section{Introduction}
-\label{sec:org6ff06d5}
+\label{sec:org9718c8b}
 
-\begin{frame}[label={sec:org480454f}]{Have you ever experienced this?}
+\begin{frame}[label={sec:org78885db}]{Have you ever experienced this?}
 \begin{center}
 \includegraphics[width=0.5\textwidth]{figure/phdcomics.png}
 \end{center}
 \end{frame}
 
-
-\begin{frame}[label={sec:org1e557b0}]{Reproducible research}
+\begin{frame}[label={sec:orgc0955e5}]{Reproducible research}
 \begin{quote}
 An article about computational science in a scientific publication is
 not the scholarship itself, it is merely advertising of the
@@ -57,8 +56,7 @@ generated the figures.
 \end{quote}
 \end{frame}
 
-
-\begin{frame}[label={sec:org32ddb60}]{How can we do reproducible research?}
+\begin{frame}[label={sec:orgfc11f18}]{How can we do reproducible research?}
 \begin{center}
 \includegraphics[width=0.8\textwidth]{figure/emacs_startup.png}
 \end{center}
@@ -67,25 +65,25 @@ You can download my presentation at
 \url{https://github.com/zngtian/intro\_org\_RR}
 \end{frame}
 
-
 \section{Emacs}
-\label{sec:org11c1679}
+\label{sec:org3230949}
 
-\begin{frame}[label={sec:orga16f371}]{What is Emacs? A text editor.}
+\begin{frame}[label={sec:org7220ed3}]{What is Emacs? A text editor.}
 GNU Emacs is a free, portable, extensible text editor.
 
-\begin{itemize}
-\item Free: Open source, freely copyable and redistributable.
-\item Portable: Run on many machines under different operating systems.
-\item Extensible: Customizable for all aspect and  many contributed packages,
-\end{itemize}
+\begin{description}
+\item[{Free}] Open source, freely copyable and redistributable.
+\item[{Portable}] Run on many machines under different operating systems.
+\item[{Extensible}] Customizable for all aspect and have many contributed
+packages.
+\end{description}
 \end{frame}
 
 
 \subsection{Emacs is beyond a text editor}
-\label{sec:org6a7b702}
+\label{sec:org9ab662a}
 
-\begin{frame}[label={sec:org266e914}]{Emacs is a \LaTeX{} editor via AucTex}
+\begin{frame}[label={sec:orgb0c058b}]{Emacs is a \LaTeX{} editor via AucTex}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.6\textwidth]{figure/auctex_example.png}
@@ -93,7 +91,7 @@ GNU Emacs is a free, portable, extensible text editor.
 \end{figure}
 \end{frame}
 
-\begin{frame}[label={sec:orgd0ea27a}]{Emacs is IDE for programming languages}
+\begin{frame}[label={sec:org2af310b}]{Emacs is IDE for programming languages}
 \begin{itemize}
 \item Edit code with syntax highlighting
 \item Execute code within Emacs
@@ -106,7 +104,7 @@ GNU Emacs is a free, portable, extensible text editor.
 \end{figure}
 \end{frame}
 
-\begin{frame}[label={sec:org4913b18}]{Emacs is an operating system}
+\begin{frame}[label={sec:orgc8ef3a5}]{Emacs is an operating system}
 \begin{itemize}
 \item Emacs is an operating system, easily managing files and folders
 within a dired-directory interface.
@@ -119,7 +117,7 @@ within a dired-directory interface.
 \end{figure}
 \end{frame}
 
-\begin{frame}[label={sec:org37f5540}]{Emacs is a Git tool via Magit}
+\begin{frame}[label={sec:org57882e0}]{Emacs is a Git tool via Magit}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.6\textwidth]{figure/magit_example.png}
@@ -127,7 +125,7 @@ within a dired-directory interface.
 \end{figure}
 \end{frame}
 
-\begin{frame}[label={sec:org73a7e4e}]{Emacs can do many other things}
+\begin{frame}[label={sec:orgb40e4df}]{Emacs can do many other things}
 \begin{itemize}
 \item Emacs can do spell checking, reading news, checking and sending
 emails, etc., through plenty of contributed packages.
@@ -138,23 +136,18 @@ project, take notes, and write dynamic documentation.
 
 
 \subsection{Installation and Configuration}
-\label{sec:orgdeb3de5}
+\label{sec:org60f1bf4}
 
-\begin{frame}[label={sec:org455445e}]{Installation}
+\begin{frame}[label={sec:org8dcdfca}]{Installation}
 \begin{itemize}
 \item Homepage of GNU Emacs: \url{https://www.gnu.org/software/emacs/}
 
 \item Vincent Goulet's binary files:
 \url{http://vgoulet.act.ulaval.ca/en/emacs/}
 \end{itemize}
-
-\begin{NOTES}
-I personally prefer the second option because it has already included
-some of the mostly used packages.
-\end{NOTES}
 \end{frame}
 
-\begin{frame}[fragile,label={sec:org9b9a0e8}]{Configuration}
+\begin{frame}[fragile,label={sec:orgf66d4dc}]{Configuration}
  Emacs is customizable and all customized configuration can be done
 with either a \texttt{.emacs} file or \texttt{init.el} under the directory
 \texttt{\textasciitilde{}/.emacs.d}.
@@ -163,12 +156,15 @@ With some settings, we can use an org file to organize and apply your
 customization.
 \end{frame}
 
-\begin{frame}[fragile,label={sec:org809527c}]{My settings}
+\begin{frame}[fragile,label={sec:org2f3ab2c}]{My settings}
  All my settings have been uploaded to Github from where you can
-download or clone \texttt{git clone
-https://github.com/zngtian/.emacs.d.git}.
+download or
 
-\begin{block}{A peek of my settings}
+\begin{verbatim}
+git clone https://github.com/zngtian/.emacs.d.git
+\end{verbatim}
+
+\begin{block}{A sneak peek of my settings}
 \begin{description}
 \item[{init.el}] \url{https://github.com/zngtian/.emacs.d/blob/master/init.el}
 \item[{myconfig.org}] \url{https://github.com/zngtian/.emacs.d/blob/master/myconfig.org}
@@ -176,11 +172,10 @@ https://github.com/zngtian/.emacs.d.git}.
 \end{block}
 \end{frame}
 
-
 \subsection{Basic usage of Emacs}
-\label{sec:orgc5d6454}
+\label{sec:org9456ea9}
 
-\begin{frame}[label={sec:org0c99707}]{Notation}
+\begin{frame}[label={sec:org5232f40}]{Notation}
 In Emacs documentation, we often see the following notations
 
 \begin{description}
@@ -193,7 +188,7 @@ In Emacs documentation, we often see the following notations
 \end{description}
 \end{frame}
 
-\begin{frame}[label={sec:org1d9eabd}]{Buffer and windows}
+\begin{frame}[label={sec:org3bd6e39}]{Buffer and windows}
 The basic user interface of Emacs is in buffers and windows
 
 \begin{figure}[htbp]
@@ -201,13 +196,9 @@ The basic user interface of Emacs is in buffers and windows
 \includegraphics[width=1.0\textwidth,height=0.8\textheight]{figure/buffer_example.png}
 \caption{An example of Emacs buffers and windows}
 \end{figure}
-
-\begin{NOTES}
-Demonstrate some operations on Emacs in this section.
-\end{NOTES}
 \end{frame}
 
-\begin{frame}[label={sec:org7666462}]{Motion within a buffer}
+\begin{frame}[label={sec:org3c905d3}]{Motion within a buffer}
 \begin{description}
 \item[{C-f and M-f}] move forward by one character and by one word
 \item[{C-b and M-b}] move backward by one letter and by one word
@@ -217,7 +208,7 @@ Demonstrate some operations on Emacs in this section.
 \end{description}
 \end{frame}
 
-\begin{frame}[label={sec:org7850566}]{Switch buffers and windows}
+\begin{frame}[label={sec:orgfed8345}]{Switch buffers and windows}
 \begin{description}
 \item[{C-x 2}] open a new buffer
 \item[{C-x 0}] close the current buffer
@@ -228,7 +219,7 @@ Demonstrate some operations on Emacs in this section.
 \end{description}
 \end{frame}
 
-\begin{frame}[label={sec:org570e153}]{Open, save, quit, and help}
+\begin{frame}[label={sec:orgbca253e}]{Open, save, quit, and help}
 \begin{description}
 \item[{C-x C-f}] open a new file
 \item[{C-x C-s}] save the current buffer
@@ -239,7 +230,7 @@ Demonstrate some operations on Emacs in this section.
 \end{description}
 \end{frame}
 
-\begin{frame}[label={sec:org21a1818}]{Copy, yank, and delete}
+\begin{frame}[label={sec:org2cfad67}]{Copy, yank, and delete}
 \begin{description}
 \item[{C-SPC}] set a mark and move the cursor around to select a region
 \item[{C-w}] kill (cut)
@@ -252,7 +243,7 @@ Demonstrate some operations on Emacs in this section.
 \end{description}
 \end{frame}
 
-\begin{frame}[label={sec:org70d9896}]{Tutorial and cheat sheet}
+\begin{frame}[label={sec:orga913d65}]{Tutorial and cheat sheet}
 \begin{description}
 \item[{C-h t}] open the complete tutorial
 
@@ -264,9 +255,9 @@ Demonstrate some operations on Emacs in this section.
 
 
 \section{Org-Mode}
-\label{sec:orge99c1a7}
+\label{sec:org78ba197}
 
-\begin{frame}[label={sec:org37079a4}]{What is org-mode}
+\begin{frame}[label={sec:orgbb0b7de}]{What is org-mode}
 Org mode is one of the most popular contributed packages in Emacs. It
 can accomplish a variety of work including, but not limited to,
 
@@ -281,9 +272,9 @@ can accomplish a variety of work including, but not limited to,
 
 
 \subsection{Structured document}
-\label{sec:org81e7d51}
+\label{sec:org03825f0}
 
-\begin{frame}[fragile,label={sec:orgaf62d19}]{Headline}
+\begin{frame}[fragile,label={sec:org484f2a6}]{Headline}
  \begin{verbatim}
 * Top level headline
 ** Second level
@@ -302,7 +293,7 @@ can accomplish a variety of work including, but not limited to,
 \end{description}
 \end{frame}
 
-\begin{frame}[fragile,label={sec:org414ebac}]{Lists}
+\begin{frame}[fragile,label={sec:orge4dc17d}]{Lists}
  \begin{verbatim}
 - Unordered list
   + Item 1
@@ -322,16 +313,16 @@ can accomplish a variety of work including, but not limited to,
 
 
 \subsection{Special elements}
-\label{sec:orgd69ee3c}
+\label{sec:orgabf2fdb}
 
-\begin{frame}[fragile,label={sec:orgaa7cd64}]{Links}
+\begin{frame}[fragile,label={sec:org14e52ab}]{Links}
  \begin{itemize}
 \item The basic syntax for a link:
 \begin{verbatim}
 [[link][description]] or [[link]]
 \end{verbatim}
 
-\item Internal link: \ref{sec:org414ebac}
+\item Internal link: \ref{sec:orge4dc17d}
 \begin{verbatim}
 [[Lists]]
 \end{verbatim}
@@ -348,7 +339,7 @@ can accomplish a variety of work including, but not limited to,
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile,label={sec:org7b69c18}]{Blocks}
+\begin{frame}[fragile,label={sec:org2c5d5ca}]{Blocks}
  \begin{itemize}
 \item Blocks are defined by \texttt{\#+BEGIN\_... and \#+END\_...}
 
@@ -380,7 +371,7 @@ but not any simpler -- Albert Einstein
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile,label={sec:orgce43fc5}]{Mathematics}
+\begin{frame}[fragile,label={sec:org2fb4d67}]{Mathematics}
  Org mode can contain \LaTeX{} math fragments that don't need any special
 marking. Just do as in \LaTeX{}.
 
@@ -401,7 +392,7 @@ If \(a^2=b\) and \(b=2\), then the solution must be
 either $$ a=+\sqrt{2} \text{ or }  a=-\sqrt{2} $$
 \end{frame}
 
-\begin{frame}[fragile,label={sec:org6e9e8ff}]{Table}
+\begin{frame}[fragile,label={sec:org2f0af45}]{Table}
  \begin{itemize}
 \item ‘|’ as the first non-whitespace character starts a table. The
 following texts yield a table in HTML export
@@ -424,7 +415,7 @@ Anna & 25 & 4321\\
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile,label={sec:orgf0cb741}]{Calculation in a table}
+\begin{frame}[fragile,label={sec:org59b7527}]{Calculation in a table}
  \begin{itemize}
 \item We can define formula for a field, a row, or a column by starting a
 field with "="
@@ -451,7 +442,7 @@ Anna & 25 & 4321\\
 \end{frame}
 
 
-\begin{frame}[fragile,label={sec:org2f8910e}]{Exporting}
+\begin{frame}[fragile,label={sec:orge93292c}]{Exporting}
  \begin{itemize}
 \item An org file can be exported to a variety of formats, including
 latex, beamer, html, odt, etc.
@@ -467,9 +458,9 @@ etc.
 
 
 \subsection{Tasks and agenda view}
-\label{sec:org7e11441}
+\label{sec:orgefdf276}
 
-\begin{frame}[label={sec:orga1c2e99}]{A sneak peek of my agenda}
+\begin{frame}[label={sec:orgde2121f}]{A sneak peek of my agenda}
 Org mode is not just a text editor that can include a rich variety of
 elements but also a handy tool to plan daily life and manage
 research projects.
@@ -482,7 +473,7 @@ research projects.
 \end{frame}
 
 
-\begin{frame}[fragile,label={sec:org924f1aa}]{To-do items}
+\begin{frame}[fragile,label={sec:orge0561c3}]{To-do items}
  TODO items in org mode are headlines defined by TODO keywords after
 asterisks.
 
@@ -499,7 +490,7 @@ asterisks.
 \end{frame}
 
 
-\begin{frame}[fragile,label={sec:org19e6332}]{Schedule and deadline}
+\begin{frame}[fragile,label={sec:org094d7b4}]{Schedule and deadline}
  We can set schedule and deadline to TODO items.
 
 \begin{description}
@@ -521,7 +512,7 @@ asterisks.
 \end{frame}
 
 
-\begin{frame}[label={sec:org09624eb}]{Agenda view}
+\begin{frame}[label={sec:org489dbd2}]{Agenda view}
 All TODO items, schedules, and deadlines can be viewed in the Agenda
 view in org mode.
 
@@ -537,12 +528,12 @@ go to the headline of a TODO item.
 
 
 \section{Reproducible research with org-mode}
-\label{sec:org6c94f81}
+\label{sec:org37f8934}
 
 \subsection{Reproducible research: basics}
-\label{sec:org0e247e4}
+\label{sec:org7b1067c}
 
-\begin{frame}[label={sec:org954cc90}]{What is reproducible research?}
+\begin{frame}[label={sec:org9424a39}]{What is reproducible research?}
 \begin{quote}
 The data and code used to make a finding are available and they are
 sufficient for an independent researcher to recreate the finding.
@@ -551,7 +542,7 @@ sufficient for an independent researcher to recreate the finding.
 \end{frame}
 
 
-\begin{frame}[label={sec:org8400ac0}]{Why should we do reproducible research?}
+\begin{frame}[label={sec:org328b7b1}]{Why should we do reproducible research?}
 \begin{block}{For readers}
 \begin{itemize}
 \item Easy for reviewers to test and validate your findings.
@@ -570,16 +561,15 @@ sufficient for an independent researcher to recreate the finding.
 \end{frame}
 
 
-\begin{frame}[label={sec:org749f18e}]{What is a workflow of reproducible research?}
+\begin{frame}[label={sec:org9bff12d}]{What is a workflow of reproducible research?}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.8\textwidth,height=0.7\textheight]{figure/research_pipline.png}
-\caption{A workflow of reproducible research (Source: Peng (2015))}
+\caption{A workflow of reproducible research (Source: Peng, 2015)}
 \end{figure}
 \end{frame}
 
-
-\begin{frame}[label={sec:org1a2a179}]{What are necessary elements of reproducible research?}
+\begin{frame}[label={sec:orga21a815}]{What are necessary elements of reproducible research?}
 Roger Peng (2015) summarizes four essential elements to make results
 reproducible:
 \begin{itemize}
@@ -592,12 +582,11 @@ reproducible:
 
 
 \subsection{Literate programming}
-\label{sec:orga709152}
+\label{sec:org636c321}
 
-\begin{frame}[label={sec:orgdedaff8}]{What is literate programming?}
+\begin{frame}[label={sec:org47f2d4e}]{What is literate programming?}
 Literate programming (Donald Knuth, 1992) is the central part of
 reproducible research.
-
 
 Typically, literate programming involves the following three steps
 (Xie, 2015):
@@ -608,7 +597,7 @@ Typically, literate programming involves the following three steps
 \end{enumerate}
 \end{frame}
 
-\begin{frame}[fragile,label={sec:org9c51cd3}]{Available tools for literate programming}
+\begin{frame}[fragile,label={sec:org77ab94d}]{Available tools for literate programming}
  \begin{itemize}
 \item WEB (Knuth, 1983)
 \item Noweb (Ramsey, 1994)
@@ -621,9 +610,9 @@ Typically, literate programming involves the following three steps
 
 
 \subsection{Literate programming with Org-mode}
-\label{sec:orga2be94e}
+\label{sec:orgc9b9a5a}
 
-\begin{frame}[fragile,label={sec:org72a4397}]{Source code block}
+\begin{frame}[fragile,label={sec:orgfc6f05c}]{Source code blocks}
  The basic structure of code blocks is as follows
 
 \begin{verbatim}
@@ -640,7 +629,7 @@ src_<language>[<header arguments>]{<body>}
 \end{verbatim}
 \end{frame}
 
-\begin{frame}[fragile,label={sec:orgb0a0b07}]{Basic settings}
+\begin{frame}[fragile,label={sec:org62ee8a8}]{Basic settings}
  \begin{verbatim}
 #+BEGIN_SRC emacs-lisp :eval no
   (org-babel-do-load-languages
@@ -658,8 +647,8 @@ src_<language>[<header arguments>]{<body>}
 \end{verbatim}
 \end{frame}
 
-\begin{frame}[label={sec:orgdfa475d}]{Header arguments}
-Header arguments fine-tune the behaviors of a source block.
+\begin{frame}[label={sec:orgc8f364e}]{Header arguments}
+Header arguments fine-tune the behaviors of source code blocks.
 
 \begin{center}
 \begin{tabular}{ll}
@@ -674,7 +663,7 @@ Header arguments & Example\\
 \end{center}
 \end{frame}
 
-\begin{frame}[fragile,label={sec:orgaf53032}]{Results in raw format}
+\begin{frame}[fragile,label={sec:orgef078ba}]{Results in raw format}
  \begin{verbatim}
 #+BEGIN_SRC R :exports both :results output
 library(ggplot2)
@@ -693,7 +682,7 @@ head(mpg[1:5])
 \end{frame}
 
 
-\begin{frame}[fragile,label={sec:orgef45699}]{Results in org tables}
+\begin{frame}[fragile,label={sec:org36ac073}]{Results in org tables}
  \begin{verbatim}
 #+BEGIN_SRC R :exports results :results value table :colnames yes :cache yes
 head(mpg[1:5])
@@ -711,7 +700,7 @@ head(mpg[1:5])
 \end{verbatim}
 \end{frame}
 
-\begin{frame}[fragile,label={sec:org75e055e}]{Results in figures}
+\begin{frame}[fragile,label={sec:orgb75c770}]{Results in figures}
  \begin{verbatim}
 #+BEGIN_SRC R :exports both :results output graphics :file mpg.png
   ggplot(mpg, aes(displ, cty, colour = class)) +
@@ -725,7 +714,7 @@ head(mpg[1:5])
 \end{verbatim}
 \end{frame}
 
-\begin{frame}[label={sec:orgdb7b14e}]{The figure generated}
+\begin{frame}[label={sec:orgc53f488}]{The figure generated}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.6\textwidth,height=0.5\textheight]{figure/mpg.png}
@@ -733,7 +722,7 @@ head(mpg[1:5])
 \end{figure}
 \end{frame}
 
-\begin{frame}[fragile,label={sec:org3cc035f}]{Results in latex}
+\begin{frame}[fragile,label={sec:orgd6b3608}]{Results in latex}
  \begin{verbatim}
 #+BEGIN_SRC R :exports both :results output latex
 library(stargazer)
@@ -765,7 +754,7 @@ hwy & 234 & 23.440 & 5.955 & 12 & 44 \\
 \end{verbatim}
 \end{frame}
 
-\begin{frame}[label={sec:orgfcf75be}]{The \LaTeX{} table generated}
+\begin{frame}[label={sec:org298c187}]{The \LaTeX{} table generated}
 
 % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
 % Date and time: Mon, Feb 06, 2017 - 09:45:31
@@ -787,7 +776,7 @@ hwy & 234 & 23.440 & 5.955 & 12 & 44 \\
 \end{table}
 \end{frame}
 
-\begin{frame}[label={sec:org67add50}]{An mini example of literate programming}
+\begin{frame}[label={sec:org5ee74d9}]{An mini example of literate programming}
 The following file is an example of reproducible research, which I
 used in teaching Econometrics.
 
@@ -795,7 +784,7 @@ used in teaching Econometrics.
 \end{frame}
 
 
-\begin{frame}[label={sec:org64d887f}]{Tutorial sources}
+\begin{frame}[label={sec:org329537f}]{Tutorial sources}
 \begin{description}
 \item[{John Kitchin's blog}] \url{http://kitchingroup.cheme.cmu.edu/blog/2014/08/08/What-we-are-using-org-mode-for/}
 
