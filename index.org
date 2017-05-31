@@ -2,7 +2,6 @@
 #+AUTHOR: Zheng Tian
 
 #+OPTIONS: toc:nil
-# #+SETUPFILE: setup/theme-readtheorg.setup
 
 
 I use this website to maintain the presentation slides for the

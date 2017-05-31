@@ -654,7 +654,6 @@ This is the key component for carrying out literate programming in org
 mode.
 #+END_NOTES
 
-
 *** Basic settings
 
 #+BEGIN_EXAMPLE
@@ -901,6 +900,105 @@ used in teaching Econometrics.
   Chapter 7 in Stock and Watson's book of Introduction to
   Econometrics.
 #+END_NOTES
+
+
+* Collaboration with Git and Github
+
+** What is Git?
+
+- Git is a version control system (VCS) that records changes to a file
+  or set of files over time so that you can recall specific versions
+  later.
+
+- Using Git to manage versions means that if you screw things up or
+  lose files, you can easily recover.
+
+** How does Git work?
+
+#+CAPTION: Storing data as snapshots of the project over time
+#+NAME: fig:snapshots
+#+ATTR_HTML: :width 800
+[[file:figure/snapshots.png]]
+
+** The basic workflow of Git goes like this
+
+#+CAPTION: Working tree, staging area, and Git directory
+#+NAME: fig:threestages
+[[file:figure/threestages.png]]
+
+** Basic Git commands
+
+- ~git init~ :: create a git repository
+- ~git add~ :: stage changes made to files
+- ~git commit~ :: commit changes
+- ~git status~ :: check the status
+- ~git log~ :: check history
+
+** Working with branches
+
+*** Branches in a nutshell
+
+#+CAPTION: Git branches in a nutshell
+#+NAME: fig:gitbranch
+[[file:figure/gitbranch.png]]
+
+*** Branch command
+
+- ~git branch~ :: create a branch
+- ~git checkout~ :: checkout to a branch
+- ~git merge~ :: merge a branch
+
+** Remote repository and Github
+
+- Git remote repositories make possible collaboration in a distributed
+  way.
+- GitHub provides remote repository hosting service, but it adds many
+  of its own features.
+- Visit https://github.com/ and sign up a free account right now!
+
+*** Set up a Github repository
+
+#+CAPTION: Initialize Github repository
+#+NAME: fig:githubrepo
+[[file:figure/newrepo.png]]
+
+*** Remote commands
+
+- ~git clone~ :: download a remote repository
+- ~git remote add~ :: add a remote repository
+- ~git pull~ :: update local files with all changes in the remote
+- ~git push~ :: upload local changes to the remote
+
+** Collaboration with Github
+
+*** Fork and download
+
+#+CAPTION: Fork a project
+#+NAME: fig:fork-project
+[[file:figure/fork.png]]
+
+*** Make changes locally
+
+#+BEGIN_SRC shell
+$ git branch testing
+$ git checkout testing
+$ git commit -a -m "make some changes"
+$ git push origin testing
+#+END_SRC
+
+*** Open pull request
+
+#+CAPTION: Open a pull request
+[[file:figure/openpullrequest.png]]
+
+*** Merge pull request
+
+#+CAPTION: Merge pull request
+#+NAME: fig:merge-pull-request
+[[file:figure/mergepull.png]]
+
+
+* Miscellaneous
 
 ** Tutorial sources
 :PROPERTIES:
