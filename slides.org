@@ -558,6 +558,15 @@ Within the agenda view, you can filter by tag, change the status, and
 go to the headline of a TODO item.
 
 
+** Org-ref
+
+Org-ref is a package developed by John Kitchin for reference
+management.
+
+#+CAPTION: A glimpse of org-ref
+[[file:figure/orgref.png]]
+
+
 * Reproducible research with org-mode
 
 ** Reproducible research: basics
@@ -913,6 +922,7 @@ used in teaching Econometrics.
 - Using Git to manage versions means that if you screw things up or
   lose files, you can easily recover.
 
+
 ** How does Git work?
 
 #+CAPTION: Storing data as snapshots of the project over time
@@ -920,11 +930,13 @@ used in teaching Econometrics.
 #+ATTR_HTML: :width 800
 [[file:figure/snapshots.png]]
 
+
 ** The basic workflow of Git goes like this
 
 #+CAPTION: Working tree, staging area, and Git directory
 #+NAME: fig:threestages
 [[file:figure/threestages.png]]
+
 
 ** Basic Git commands
 
@@ -933,6 +945,7 @@ used in teaching Econometrics.
 - ~git commit~ :: commit changes
 - ~git status~ :: check the status
 - ~git log~ :: check history
+
 
 ** Working with branches
 
@@ -947,6 +960,7 @@ used in teaching Econometrics.
 - ~git branch~ :: create a branch
 - ~git checkout~ :: checkout to a branch
 - ~git merge~ :: merge a branch
+
 
 ** Remote repository and Github
 
@@ -968,6 +982,7 @@ used in teaching Econometrics.
 - ~git remote add~ :: add a remote repository
 - ~git pull~ :: update local files with all changes in the remote
 - ~git push~ :: upload local changes to the remote
+
 
 ** Collaboration with Github
 
@@ -998,6 +1013,17 @@ $ git push origin testing
 [[file:figure/mergepull.png]]
 
 
+** Other functionalities of Github
+
+- Github page ::
+  - https://pages.github.com
+  - https://isem-cueb-ztian.github.io/Intro-Econometrics-2017/
+
+- Github classroom ::
+  - https://classroom.github.com/
+  - https://github.com/ISEM-CUEB-ZTIAN
+
+
 * Miscellaneous
 
 ** Tutorial sources
@@ -1011,8 +1037,14 @@ $ git push origin testing
 - John Kitchin's presentation on YouTube ::
   https://www.youtube.com/watch?v=1-dUkyn_fZA&t=126s
 
-- Vikas Rawal's tutorial :: https://github.com/vikasrawal/orgpaper/blob/master/orgpapers.org
+- Vikas Rawal's tutorial ::
+     https://github.com/vikasrawal/orgpaper/blob/master/orgpapers.org
 
+- The book /Pro Git/ ::
+  Git is fully documented in this book, https://git-scm.com/book/en/v2.
+
+- Github tutorial ::
+  https://guides.github.com/activities/hello-world/
 
 ** Version information
 
