@@ -1,4 +1,4 @@
-#+TITLE: Emacs, Org-Mode, and Reproducible Research
+#+TITLE: Reproducible Research: Using Emacs, Org-Mode, Git, and GitHub
 #+AUTHOR: Zheng Tian
 #+DATE:
 
