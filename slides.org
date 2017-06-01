@@ -938,6 +938,13 @@ used in teaching Econometrics.
 [[file:figure/threestages.png]]
 
 
+** A life cycle of a file
+
+#+CAPTION: A life cycle of a file under git
+#+NAME: fig:lifecycle
+[[file:figure/lifecycle.png]]
+
+
 ** Basic Git commands
 
 - ~git init~ :: create a git repository
@@ -1045,6 +1052,7 @@ $ git push origin testing
 
 - Github tutorial ::
   https://guides.github.com/activities/hello-world/
+
 
 ** Version information
 
